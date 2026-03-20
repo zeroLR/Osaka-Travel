@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#4A6E8C"/>
+
+  <!-- Torii gate -->
+  <!-- Top bar shadow -->
+  <rect x="96" y="148" width="320" height="36" rx="8" fill="#1a3a52" opacity="0.3"/>
+  <!-- Top bar -->
+  <rect x="88" y="136" width="336" height="36" rx="8" fill="#fff"/>
+  <!-- Second bar shadow -->
+  <rect x="126" y="196" width="260" height="24" rx="6" fill="#1a3a52" opacity="0.2"/>
+  <!-- Second bar -->
+  <rect x="120" y="188" width="272" height="24" rx="6" fill="#ffffffcc"/>
+
+  <!-- Left pillar -->
+  <rect x="148" y="172" width="36" height="208" rx="6" fill="#fff"/>
+  <!-- Right pillar -->
+  <rect x="328" y="172" width="36" height="208" rx="6" fill="#fff"/>
+
+  <!-- Cherry blossom petals (bottom decoration) -->
+  <g opacity="0.85">
+    <!-- petal cluster left -->
+    <ellipse cx="108" cy="390" rx="18" ry="12" fill="#F9C6CE" transform="rotate(-30 108 390)"/>
+    <ellipse cx="128" cy="378" rx="18" ry="12" fill="#F9C6CE" transform="rotate(10 128 378)"/>
+    <ellipse cx="118" cy="410" rx="16" ry="10" fill="#F9C6CE" transform="rotate(50 118 410)"/>
+    <!-- center dot -->
+    <circle cx="118" cy="395" r="5" fill="#e8a0aa"/>
+
+    <!-- petal cluster right -->
+    <ellipse cx="404" cy="390" rx="18" ry="12" fill="#F9C6CE" transform="rotate(30 404 390)"/>
+    <ellipse cx="384" cy="378" rx="18" ry="12" fill="#F9C6CE" transform="rotate(-10 384 378)"/>
+    <ellipse cx="394" cy="410" rx="16" ry="10" fill="#F9C6CE" transform="rotate(-50 394 410)"/>
+    <!-- center dot -->
+    <circle cx="394" cy="395" r="5" fill="#e8a0aa"/>
+  </g>
+
+  <!-- Path steps at bottom -->
+  <rect x="196" y="380" width="120" height="10" rx="3" fill="#ffffff55"/>
+  <rect x="216" y="360" width="80" height="10" rx="3" fill="#ffffff44"/>
+</svg>
