@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600&display=swap');
+
+:root {
+    --app-bg: #F4F6F9;
+    --card-bg: #FFFFFF;
+    --primary-blue: #4A6E8C;
+    --light-blue-bg: #EAF2F8;
+    --active-blue: #3B82F6;
+    --text-main: #2D3748;
+    --text-muted: #718096;
+    --hint-bg: #FDF8E4;
+    --border-color: #E2E8F0;
+}
+
+body {
+    background-color: var(--app-bg);
+    font-family: 'Noto Sans TC', sans-serif;
+    color: var(--text-main);
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 隱藏滾動條但保持可滾動 */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* 視圖切換 */
+.view-section {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+.view-section.active {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero 圖片區塊 */
+.hero-section {
+    background-image: linear-gradient(rgba(30, 41, 59, 0.4), rgba(30, 41, 59, 0.7)), url('https://images.unsplash.com/photo-1624253321171-1be53e12f5f4?q=80&w=1000&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center 30%;
+}
+
+.serif-title {
+    font-family: 'Noto Serif TC', serif;
+}
+
+/* 導航列安全距離 */
+.pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+}
+
+/* Checkbox 樣式 */
+.custom-checkbox input:checked + div {
+    background-color: #22C55E;
+    border-color: #22C55E;
+}
+.custom-checkbox input:checked + div i {
+    display: block;
+}
+
+/* 進度條過渡 */
+.progress-bar-fill {
+    transition: width 0.3s ease;
+}
+
+/* 隱藏 details 的預設箭頭 */
+summary::-webkit-details-marker {
+    display: none;
+}
