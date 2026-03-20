@@ -128,12 +128,20 @@ function initItineraryView(data) {
     }
 
     function buildList(items) {
-        const itemsHtml = items.map(item => `
-            <div class="flex flex-col">
-                <span class="text-sm font-bold text-[#4A6E8C] mb-0.5">${item.name}</span>
-                ${item.desc ? `<span class="text-xs text-gray-500 leading-relaxed">${item.desc}</span>` : ''}
-            </div>
-        `).join('');
+        const itemsHtml = items.map(item => {
+            const nameHtml = item.link
+                ? `<a href="${item.link}" target="_blank" class="flex items-center gap-1.5 hover:underline">
+                       ${item.name}
+                       <i class="fa-solid fa-map-location-dot text-[10px] opacity-60"></i>
+                   </a>`
+                : item.name;
+            return `
+                <div class="flex flex-col">
+                    <span class="text-sm font-bold text-[#4A6E8C] mb-0.5">${nameHtml}</span>
+                    ${item.desc ? `<span class="text-xs text-gray-500 leading-relaxed">${item.desc}</span>` : ''}
+                </div>
+            `;
+        }).join('');
 
         return `<div class="bg-white rounded-xl p-3 mb-3 shadow-sm border border-gray-100 space-y-3">${itemsHtml}</div>`;
     }
@@ -142,6 +150,11 @@ function initItineraryView(data) {
         const tagsHtml = card.tags
             .map(t => `<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full">${t}</span>`)
             .join('');
+        const mapBtnHtml = card.link
+            ? `<a href="${card.link}" target="_blank" class="bg-[#4A6E8C] text-white px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5 active:scale-95 transition-transform mt-3 w-fit">
+                   <i class="fa-solid fa-map-location-dot"></i> 在地圖上查看
+               </a>`
+            : '';
 
         return `
             <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden mb-3">
@@ -150,6 +163,7 @@ function initItineraryView(data) {
                     <h4 class="font-bold text-gray-800 text-lg mb-2">${card.title}</h4>
                     <div class="flex gap-2 flex-wrap mb-2">${tagsHtml}</div>
                     <p class="text-xs text-gray-500 leading-relaxed mt-3 pt-3 border-t border-gray-100">${card.desc}</p>
+                    ${mapBtnHtml}
                 </div>
             </div>
         `;
