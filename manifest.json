@@ -1,0 +1,27 @@
+{
+  "name": "大阪京都七日遊 2026",
+  "short_name": "大阪旅行",
+  "description": "大阪・京都 7 天行程規劃 (03/28–04/03, 2026)",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#4A6E8C",
+  "theme_color": "#4A6E8C",
+  "lang": "zh-TW",
+  "categories": ["travel", "lifestyle"],
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
