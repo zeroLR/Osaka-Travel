@@ -603,13 +603,36 @@ const itineraryData = [
         sections: [
             {
                 type: "dining", title: "餐廳", icon: "fa-utensils",
-                list: [
-                    {
-                        name: "燒肉力丸 初天神店",
-                        desc: "11:30 已預訂，旅程最後的燒肉大餐！",
-                        link: "https://www.google.com/maps/search/?api=1&query=焼肉力丸+初天神店+大阪"
-                    }
-                ]
+                card: {
+                    image: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=600&auto=format&fit=crop",
+                    title: "焼肉力丸 梅田お初天神店",
+                    tags: ["🕒 11:30 已預訂", "👥 2名", "⏱️ 120分"],
+                    desc: `
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between text-xs">
+                                <span class="text-gray-400">套餐</span>
+                                <span class="font-medium text-gray-700">お初天神限定 和牛コース</span>
+                            </div>
+                            <div class="flex justify-between text-xs">
+                                <span class="text-gray-400">飲料</span>
+                                <span class="font-medium text-gray-700">軟飲無限暢飲（120分制）</span>
+                            </div>
+                            <div class="flex justify-between text-xs">
+                                <span class="text-gray-400">費用</span>
+                                <span class="font-medium text-gray-700">¥5,808／人（含稅）</span>
+                            </div>
+                            <div class="flex justify-between text-xs">
+                                <span class="text-gray-400">訂位人</span>
+                                <span class="font-medium text-gray-700">楊 チェンエン（2名）</span>
+                            </div>
+                            <div class="flex justify-between text-xs">
+                                <span class="text-gray-400">店家電話</span>
+                                <a href="tel:+81663127971" class="font-medium text-[#4A6E8C] underline">+81-6-6312-7971</a>
+                            </div>
+                        </div>
+                    `,
+                    link: "https://www.google.com/maps/search/?api=1&query=焼肉力丸+梅田お初天神店+大阪"
+                }
             },
             {
                 type: "transport", title: "交通", icon: "fa-train-tram",
