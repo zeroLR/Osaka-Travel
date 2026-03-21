@@ -303,12 +303,42 @@ const itineraryData = [
             {
                 type: "transport", title: "交通", icon: "fa-train-tram",
                 table: [
-                    { time: "07:30", route: "大阪 → 伏見稻荷", cost: "約¥600", note: "京阪電車" },
-                    { time: "11:00", route: "伏見 → 宇治", cost: "約¥300", note: "京阪電車" }
+                    { time: "07:30", route: "大阪梅田 → 淀屋橋", cost: "-", note: "地下鐵御堂筋線，約10分" },
+                    { time: "07:45", route: "淀屋橋 → 伏見稻荷", cost: "約¥420", note: "京阪本線特急，約30分" },
+                    { time: "11:00", route: "伏見稻荷 → 中書島", cost: "約¥200", note: "京阪本線，約10分" },
+                    { time: "11:15", route: "中書島 → 宇治", cost: "約¥200", note: "京阪宇治線，約20分" },
+                    { time: "下午", route: "宇治 → 大阪梅田", cost: "約¥500", note: "京阪宇治線→京阪本線→地下鐵" }
                 ],
+                collapsible: {
+                    title: "🚆 第五天完整交通路線",
+                    content: `
+                        <h4 class="font-bold text-[#4A6E8C] mt-2 mb-1">1️⃣ 梅田 → 伏見稻荷 (約40分)</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">
+                            <b>梅田駅</b>（地下鐵御堂筋線）→ <b>淀屋橋駅</b> 換乘 <b>京阪本線特急</b>，
+                            直達 <b>伏見稻荷駅</b>，出站步行 3 分鐘到大社入口。<br>
+                            <span class="text-gray-400">※ ICOCA 可直接刷，無需購票。</span>
+                        </p>
+                        <h4 class="font-bold text-[#4A6E8C] mb-1">2️⃣ 伏見稻荷 → 宇治 (換車，約30分)</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">
+                            搭京阪本線至 <b>中書島駅</b> 下車，換乘 <b>京阪宇治線</b>（月台同層，步行2分），
+                            終點站即 <b>宇治駅</b>，步行 10 分鐘到平等院。
+                        </p>
+                        <h4 class="font-bold text-[#4A6E8C] mb-1">3️⃣ 宇治 → 回大阪梅田 (約50分)</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">
+                            宇治駅 → 中書島駅（京阪宇治線）→ 淀屋橋駅（京阪本線特急）→
+                            梅田駅（地下鐵御堂筋線）。全程約 50 分鐘。
+                        </p>
+                        <div class="bg-amber-50 border border-amber-200 rounded-lg p-2.5 text-xs text-gray-700">
+                            <strong class="text-amber-700">💡 注意：</strong>京阪電車不接受 JR Pass，需刷 ICOCA 或另購票。
+                            伏見稻荷駅與 JR 稻荷駅相鄰，搭<b>京阪</b>請認明「伏見稻荷」而非 JR 稻荷站。
+                        </div>
+                    `
+                },
+                hint: "今日最早出發（07:30），建議前晚準備好 ICOCA 餘額。伏見稻荷人潮很多，08:30 前抵達才能拍到空鳥居。",
                 buttons: [
                     { text: "大阪 → 伏見稻荷導航", link: "https://www.google.com/maps/dir/?api=1&origin=大阪駅&destination=伏見稲荷大社&travelmode=transit" },
-                    { text: "伏見 → 宇治導航", link: "https://www.google.com/maps/dir/?api=1&origin=伏見稲荷大社&destination=平等院鳳凰堂+宇治&travelmode=transit" }
+                    { text: "伏見 → 宇治導航", link: "https://www.google.com/maps/dir/?api=1&origin=伏見稲荷大社&destination=平等院鳳凰堂+宇治&travelmode=transit" },
+                    { text: "宇治 → 大阪導航", link: "https://www.google.com/maps/dir/?api=1&origin=宇治駅+京都&destination=大阪梅田駅&travelmode=transit" }
                 ]
             },
             {
