@@ -245,14 +245,83 @@ const itineraryData = [
                 ]
             },
             {
-                type: "attraction", title: "景點", icon: "fa-camera",
-                card: {
-                    image: "https://images.unsplash.com/photo-1590403323067-154a1d41829e?q=80&w=600&auto=format&fit=crop",
-                    title: "嵐山小火車 & 保津川遊船",
-                    tags: ["🕒 09:00 小火車", "🕒 11:00 遊船", "⏱️ 總需半天"],
-                    desc: "09:00 搭乘嵯峨野觀光小火車從嵯峨站出發。11:00 轉乘保津川遊船，享受約2小時的峽谷風光。下午漫步竹林小徑與渡月橋。",
-                    link: "https://www.google.com/maps/dir/?api=1&origin=嵯峨野観光鉄道嵯峨駅&destination=渡月橋+嵐山&waypoints=亀岡乗船場&travelmode=walking"
-                }
+                type: "attraction", title: "景點導覽", icon: "fa-camera",
+                cards: [
+                    {
+                        image: "https://images.unsplash.com/photo-1590403323067-154a1d41829e?q=80&w=600&auto=format&fit=crop",
+                        title: "嵯峨野嵐山小火車",
+                        desc: "09:00 出發，沿峽谷行駛約25分鐘，春季可欣賞嫩綠山景。",
+                        link: "https://www.google.com/maps/search/?api=1&query=嵯峨野観光鉄道+嵯峨駅"
+                    },
+                    {
+                        image: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?q=80&w=600&auto=format&fit=crop",
+                        title: "保津川漂流（遊船）",
+                        desc: "11:00 於亀岡乘船，穿越保津川峽谷約2小時，抵達嵐山。",
+                        link: "https://www.google.com/maps/search/?api=1&query=保津川下り+亀岡乗船場"
+                    },
+                    {
+                        image: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?q=80&w=600&auto=format&fit=crop",
+                        title: "渡月橋",
+                        desc: "嵐山最具代表性的地標，橫跨桂川，春季兩岸山景如畫。",
+                        link: "https://www.google.com/maps/search/?api=1&query=渡月橋+嵐山"
+                    },
+                    {
+                        image: "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600&auto=format&fit=crop",
+                        title: "嵐山竹林小徑",
+                        desc: "高聳翠竹形成天然拱廊，晨間人少時最美，建議早上前往。",
+                        link: "https://www.google.com/maps/search/?api=1&query=嵐山竹林+京都"
+                    },
+                    {
+                        image: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=600&auto=format&fit=crop",
+                        title: "天龍寺",
+                        desc: "世界遺產禪寺，曹源池庭園以借景嵐山聞名，入場 ¥500。",
+                        link: "https://www.google.com/maps/search/?api=1&query=天龍寺+嵐山"
+                    },
+                    {
+                        image: "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?q=80&w=600&auto=format&fit=crop",
+                        title: "嵐山公園",
+                        desc: "免費開放的丘陵公園，登上龜山地區可俯瞰保津川峽谷全景。",
+                        link: "https://www.google.com/maps/search/?api=1&query=嵐山公園+京都"
+                    },
+                    {
+                        image: "https://images.unsplash.com/photo-1559628233-100c798642d8?q=80&w=600&auto=format&fit=crop",
+                        title: "中之島地區",
+                        desc: "渡月橋旁桂川中洲，春季河灘散步、賞山景的好去處。",
+                        link: "https://www.google.com/maps/search/?api=1&query=中之島公園+嵐山"
+                    },
+                    {
+                        image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=600&auto=format&fit=crop",
+                        title: "嵐電嵐山駅 花の間",
+                        desc: "嵐電嵐山站著名的花卉裝飾廁所「花の間」，是IG必拍打卡點。",
+                        link: "https://www.google.com/maps/search/?api=1&query=嵐電嵐山駅+京都"
+                    },
+                    {
+                        image: "https://images.unsplash.com/photo-1542640244-7e672d6cef4e?q=80&w=600&auto=format&fit=crop",
+                        title: "野宮神社",
+                        desc: "竹林小徑入口的古老神社，供奉縁結與學業，境內有黑木鳥居。",
+                        link: "https://www.google.com/maps/search/?api=1&query=野宮神社+嵐山"
+                    }
+                ]
+            },
+            {
+                type: "attraction", title: "和服體驗 & 購物", icon: "fa-shirt",
+                list: [
+                    {
+                        name: "Kinkaku-ji Kyolan（京らん）着物體驗",
+                        desc: "嵐山人氣和服租借與拍攝體驗，可換上傳統和服漫步竹林，含髮型造型服務。建議提前線上預約。",
+                        link: "https://www.google.com/maps/search/?api=1&query=京らん+嵐山+着物レンタル"
+                    },
+                    {
+                        name: "Kimono Rental & Sale 嵐山",
+                        desc: "另一間嵐山和服租借選擇，款式豐富，支援中文服務，租借時段約 3-4 小時。",
+                        link: "https://www.google.com/maps/search/?api=1&query=着物レンタル+嵐山+京都"
+                    },
+                    {
+                        name: "Sweets Cafe Emman 嵐山（甘夢庵）",
+                        desc: "渡月橋附近的特色麻糬甜點咖啡廳，招牌抹茶麻糬套餐使用宇治茶，環境雅致適合休憩。",
+                        link: "https://www.google.com/maps/search/?api=1&query=Sweets+Cafe+Emman+嵐山"
+                    }
+                ]
             },
             {
                 type: "dining", title: "餐廳推薦", icon: "fa-utensils",
@@ -266,6 +335,11 @@ const itineraryData = [
                         name: "【下午茶】%アラビカ京都 嵐山",
                         desc: "渡月橋橋頭的網紅咖啡廳，外帶一杯 Latte 邊走邊喝、拍照超美！",
                         link: "https://www.google.com/maps/search/?api=1&query=%25+Arabica+Kyoto+Arashiyama"
+                    },
+                    {
+                        name: "【晚餐】京都嵐山 和牛 六重亭",
+                        desc: "嵐山高評價和牛餐廳，提供京都產黑毛和牛鐵板燒與懷石套餐，是當天最適合的壓軸晚餐。建議提前訂位。",
+                        link: "https://www.google.com/maps/search/?api=1&query=六重亭+嵐山+和牛+京都"
                     },
                     {
                         name: "【晚餐備案】回大阪後 — 曾根崎周邊",
