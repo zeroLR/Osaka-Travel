@@ -157,9 +157,22 @@ const itineraryData = [
             {
                 type: "transport", title: "交通", icon: "fa-train-tram",
                 table: [
-                    { time: "07:30", route: "大阪 → 嵯峨嵐山", cost: "約¥1000", note: "JR或私鐵" }
+                    { time: "07:30", route: "大阪梅田 → 嵯峨嵐山", cost: "約¥1000", note: "JR大阪環狀線→JR嵯峨野線" },
+                    { time: "下午", route: "嵐山 → 大阪梅田", cost: "約¥1000", note: "遊覽結束後返回" }
                 ],
-                hint: "今日有兩個固定預約時間 (09:00 小火車 / 11:00 遊船)，早上請務必提早出發，預留迷路與轉車時間。",
+                collapsible: {
+                    title: "🚆 梅田出發詳細路線",
+                    content: `
+                        <h4 class="font-bold text-[#4A6E8C] mt-2 mb-1">🚉 推薦路線 (JR，最直達)</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">大阪駅 → JR嵯峨野線（快速）→ 嵯峨嵐山駅，全程約 50-60 分鐘。<br>請在 <b>07:30 前出發</b>，08:45 前抵達嵯峨站，步行 3 分鐘到小火車乘車處。</p>
+                        <h4 class="font-bold text-[#4A6E8C] mb-1">⚠️ 注意</h4>
+                        <p class="mb-2 text-xs leading-relaxed text-gray-600">嵯峨野小火車站 (トロッコ嵯峨駅) 在 JR 嵯峨嵐山駅旁，出站後按指標步行約 3 分鐘即可。</p>
+                        <div class="bg-amber-50 border border-amber-200 rounded-lg p-2.5 text-xs text-gray-700">
+                            <strong class="text-amber-700">💡 回程建議：</strong>遊船結束地點是嵐山站（嵐電/阪急），可搭阪急嵐山線→大阪梅田，約 40 分鐘。
+                        </div>
+                    `
+                },
+                hint: "今日有兩個固定預約時間 (09:00 小火車 / 11:00 遊船)，早上請務必提早出發！3月底氣溫約 10-15°C，建議穿薄外套＋帶折疊傘（山區易起霧飄雨）。",
                 buttons: [
                     { text: "大阪 → 嵯峨嵐山導航", link: "https://www.google.com/maps/dir/?api=1&origin=大阪駅&destination=嵯峨嵐山駅&travelmode=transit" }
                 ]
@@ -173,6 +186,26 @@ const itineraryData = [
                     desc: "09:00 搭乘嵯峨野觀光小火車從嵯峨站出發。11:00 轉乘保津川遊船，享受約2小時的峽谷風光。下午漫步竹林小徑與渡月橋。",
                     link: "https://www.google.com/maps/dir/?api=1&origin=嵯峨野観光鉄道嵯峨駅&destination=渡月橋+嵐山&waypoints=亀岡乗船場&travelmode=walking"
                 }
+            },
+            {
+                type: "dining", title: "餐廳推薦", icon: "fa-utensils",
+                list: [
+                    {
+                        name: "【午餐】嵐山よしむら",
+                        desc: "遊船結束後、渡月橋旁的蕎麥麵名店，可邊欣賞桂川美景邊用餐。無需預約，建議 12:30 前入座避免久候。",
+                        link: "https://www.google.com/maps/search/?api=1&query=嵐山よしむら+京都"
+                    },
+                    {
+                        name: "【下午茶】%アラビカ京都 嵐山",
+                        desc: "渡月橋橋頭的網紅咖啡廳，外帶一杯 Latte 邊走邊喝、拍照超美！",
+                        link: "https://www.google.com/maps/search/?api=1&query=%25+Arabica+Kyoto+Arashiyama"
+                    },
+                    {
+                        name: "【晚餐備案】回大阪後 — 曾根崎周邊",
+                        desc: "若回梅田時已接近晚餐時間，可直接到飯店附近的お初天神通り覓食（烤雞串、居酒屋選擇豐富）。",
+                        link: "https://www.google.com/maps/search/?api=1&query=お初天神通り+大阪"
+                    }
+                ]
             }
         ]
     },
@@ -180,29 +213,81 @@ const itineraryData = [
         day: 4, date: "03/31", weekday: "二", title: "清水寺與祇園風情", tags: ["京都", "東山區"],
         sections: [
             {
+                type: "transport", title: "交通 (飯店 → 清水寺)", icon: "fa-train-tram",
+                table: [
+                    { time: "08:30", route: "梅田 → 京都駅", cost: "約¥570", note: "JR新快速，約30分" },
+                    { time: "09:10", route: "京都駅 → 清水道", cost: "約¥230", note: "市バス206號 或 100號" }
+                ],
+                collapsible: {
+                    title: "🚌 清水寺詳細交通路線",
+                    content: `
+                        <h4 class="font-bold text-[#4A6E8C] mt-2 mb-1">🚉 Step 1：大阪梅田 → 京都駅</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">從大阪駅搭 <b>JR神戶線/琵琶湖線新快速</b> 方向，約 28 分鐘到京都駅（約 ¥570）。早上 08:30 出發，09:00 前可抵達。</p>
+                        <h4 class="font-bold text-[#4A6E8C] mb-1">🚌 Step 2：京都駅 → 清水道（市バス）</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">在京都駅「D1 月台」搭乘 <b>市バス 206號</b>（東山廻り）或 <b>100號</b>，約 15-20 分鐘在「<b>清水道</b>」站下車，步行 10 分鐘即達清水寺。單程 ¥230。</p>
+                        <div class="bg-blue-50 border border-blue-100 rounded-lg p-2.5 text-xs text-gray-700">
+                            <strong class="text-[#4A6E8C]">💡 小提示：</strong>回程可步行至四条或三条，轉搭地下鐵或京阪電車回京都駅，避開公車塞車。
+                        </div>
+                    `
+                },
+                hint: "此行程步行量極大（約 12,000 步），請穿著好走的運動鞋。3月底氣溫約 12-18°C，日夜溫差大，記得帶外套。",
+                buttons: [
+                    { text: "大阪 → 清水寺導航", link: "https://www.google.com/maps/dir/?api=1&origin=大阪駅&destination=清水寺+京都&travelmode=transit" }
+                ]
+            },
+            {
                 type: "attraction", title: "景點路線", icon: "fa-camera",
                 list: [
                     {
                         name: "清水寺",
-                        desc: "早上先走經典清水舞台。",
+                        desc: "早上先走經典清水舞台，趁遊客少時拍空景。建議 09:30 前到達。入場 ¥400。",
                         link: "https://www.google.com/maps/search/?api=1&query=清水寺+京都"
                     },
                     {
-                        name: "清水坂 / 二年坂",
-                        desc: "逛街、拍照，買伴手禮 (茶之菓)。",
+                        name: "清水坂 / 二年坂 / 三年坂",
+                        desc: "逛街、拍照，買伴手禮 (茶之菓、京都限定零食)。注意：三年坂傳說跌倒不吉，小心石板路。",
                         link: "https://www.google.com/maps/search/?api=1&query=二年坂+産寧坂+京都"
                     },
                     {
+                        name: "八坂神社",
+                        desc: "祇園入口的朱紅神社，免費參觀，傍晚燈籠亮起後特別美。",
+                        link: "https://www.google.com/maps/search/?api=1&query=八坂神社+京都"
+                    },
+                    {
                         name: "祇園 / 花見小路",
-                        desc: "傍晚漫步，感受古都風情。",
+                        desc: "傍晚漫步，感受古都風情，運氣好可遇到舞妓。禁止追拍，請保持距離欣賞。",
                         link: "https://www.google.com/maps/search/?api=1&query=花見小路+祇園+京都"
                     }
                 ],
-                hint: "此區全程需大量步行，請穿著好走的運動鞋。",
                 buttons: [
                     { text: "清水寺", link: "https://www.google.com/maps/search/?api=1&query=清水寺+京都" },
                     { text: "八坂神社", link: "https://www.google.com/maps/search/?api=1&query=八坂神社+京都" },
                     { text: "東山散步路線", link: "https://www.google.com/maps/dir/?api=1&origin=清水寺+京都&destination=八坂神社+京都&waypoints=二年坂+京都|花見小路+祇園&travelmode=walking" }
+                ]
+            },
+            {
+                type: "dining", title: "餐廳推薦", icon: "fa-utensils",
+                list: [
+                    {
+                        name: "【午餐】錦市場 — 京の台所",
+                        desc: "從清水坂步行約 15 分鐘。這條400年歷史的市場小巷有串燒、玉子燒、豆腐等小吃，邊走邊吃解決午餐超推薦！",
+                        link: "https://www.google.com/maps/search/?api=1&query=錦市場+京都"
+                    },
+                    {
+                        name: "【下午茶】茶房 寧寧之道",
+                        desc: "石塀小路旁的傳統町家茶屋，抹茶甜點組合，適合走累了坐下來休息。",
+                        link: "https://www.google.com/maps/search/?api=1&query=石塀小路+京都+茶房"
+                    },
+                    {
+                        name: "【晚餐】IZUJU 壽司（祇園）",
+                        desc: "百年老舖的鯖魚押壽司（バッテラ）是京都名物，祇園散步後就順路。建議 17:30 前入座，無預約，現場排隊。",
+                        link: "https://www.google.com/maps/search/?api=1&query=いづう+祇園+京都"
+                    },
+                    {
+                        name: "【晚餐備案】Ramen 麵屋 たけいち",
+                        desc: "若不想排隊，附近有多間拉麵店可選，是京都特有雞白湯系拉麵。",
+                        link: "https://www.google.com/maps/search/?api=1&query=麺屋たけいち+京都"
+                    }
                 ]
             }
         ]
@@ -237,14 +322,30 @@ const itineraryData = [
                 ]
             },
             {
-                type: "dining", title: "餐廳", icon: "fa-utensils",
+                type: "dining", title: "餐廳推薦", icon: "fa-utensils",
                 list: [
                     {
-                        name: "宇治抹茶甜點",
-                        desc: "中村藤吉或伊藤久右衛門。",
+                        name: "【早餐】伏見稻荷周邊超商/咖啡",
+                        desc: "07:30 出發，建議在大阪便利商店買好早餐帶著吃，或在伏見稻荷站附近的咖啡廳用餐，趁人潮還少先衝鳥居拍照。",
+                        link: "https://www.google.com/maps/search/?api=1&query=伏見稲荷大社+周辺+カフェ"
+                    },
+                    {
+                        name: "【午餐/下午茶】中村藤吉本店（宇治）",
+                        desc: "宇治最知名的百年抹茶老舖，生茶果凍（生茶ゼリイ）與抹茶膳套餐必點。建議 11:30 前抵達排隊，假日人潮多。",
                         link: "https://www.google.com/maps/search/?api=1&query=中村藤吉本店+宇治"
+                    },
+                    {
+                        name: "【抹茶甜點備案】伊藤久右衛門（宇治）",
+                        desc: "宇治另一大抹茶名家，抹茶聖代與抹茶蕎麥麵組合同樣超人氣。若中村藤吉等待時間過長，這裡是絕佳替代。",
+                        link: "https://www.google.com/maps/search/?api=1&query=伊藤久右衛門+宇治"
+                    },
+                    {
+                        name: "【晚餐】回大阪後 — 梅田拉麵一蘭",
+                        desc: "宇治逛完約 16:00 返回大阪，一蘭拉麵梅田店提供隔板獨享座位，適合走了一整天後安靜享用。",
+                        link: "https://www.google.com/maps/search/?api=1&query=一蘭+梅田+大阪"
                     }
-                ]
+                ],
+                hint: "今日行程早出（07:30），記得前晚睡好！伏見稻荷建議 08:30 前抵達避人潮，拍到空鳥居的成就感超強。"
             }
         ]
     },
@@ -252,29 +353,77 @@ const itineraryData = [
         day: 6, date: "04/02", weekday: "四", title: "金閣寺與最後補齊", tags: ["京都", "大阪"],
         sections: [
             {
+                type: "transport", title: "交通", icon: "fa-train-tram",
+                table: [
+                    { time: "09:00", route: "大阪梅田 → 京都駅", cost: "約¥570", note: "JR新快速" },
+                    { time: "09:40", route: "京都駅 → 金閣寺道", cost: "約¥230", note: "市バス101/205號" },
+                    { time: "下午", route: "北野白梅町 → 京都駅", cost: "約¥230", note: "市バス50號或嵐電" },
+                    { time: "~15:00", route: "京都駅 → 大阪梅田", cost: "約¥570", note: "JR新快速返回" }
+                ],
+                collapsible: {
+                    title: "🗺️ 金閣寺 → 北野天滿宮 → 回大阪路線",
+                    content: `
+                        <h4 class="font-bold text-[#4A6E8C] mt-2 mb-1">1️⃣ 京都駅 → 金閣寺道</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">京都駅 <b>A3 月台</b> 搭市バス <b>101號或205號</b>，約 40 分鐘到「<b>金閣寺道</b>」站下車，步行 5 分鐘。票價 ¥230。</p>
+                        <h4 class="font-bold text-[#4A6E8C] mb-1">2️⃣ 金閣寺 → 北野天滿宮</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">步行約 20 分鐘（1.5km），或搭市バス（金閣寺前→北野天満宮前，2站）。</p>
+                        <h4 class="font-bold text-[#4A6E8C] mb-1">3️⃣ 北野天滿宮 → 回大阪</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">步行 7 分鐘到「<b>北野白梅町駅</b>」搭嵐電（¥250）到四条大宮，再轉 JR 或阪急到大阪梅田。<br>或搭市バス50號回京都駅，再搭 JR 新快速。</p>
+                        <div class="bg-green-50 border border-green-100 rounded-lg p-2.5 text-xs text-gray-700">
+                            <strong class="text-green-700">💡 建議：</strong>14:30 前離開京都，回大阪還有 2-3 小時買伴手禮退稅。
+                        </div>
+                    `
+                },
+                hint: "今日是京都最後一天！氣溫約 12-18°C，早上仍需外套。下午回大阪後記得留時間退稅（免稅門市排隊約 20-30 分）。",
+                buttons: [
+                    { text: "大阪 → 金閣寺導航", link: "https://www.google.com/maps/dir/?api=1&origin=大阪駅&destination=金閣寺+京都&travelmode=transit" }
+                ]
+            },
+            {
                 type: "attraction", title: "景點", icon: "fa-camera",
                 list: [
                     {
                         name: "金閣寺 (鹿苑寺)",
-                        desc: "欣賞閃耀的金箔建築與倒影。",
+                        desc: "欣賞閃耀的金箔建築與倒影。早上光線充足，倒影最美。入場 ¥500。",
                         link: "https://www.google.com/maps/search/?api=1&query=金閣寺+鹿苑寺+京都"
                     },
                     {
                         name: "北野天滿宮",
-                        desc: "學問之神，周邊逛逛。",
+                        desc: "學問之神，周邊有梅苑（4月已結束）與可愛的牛牛雕像可拍照，免費參觀。",
                         link: "https://www.google.com/maps/search/?api=1&query=北野天満宮+京都"
                     }
                 ],
                 buttons: [
-                    { text: "金閣寺 → 北野天滿宮導航", link: "https://www.google.com/maps/dir/?api=1&origin=金閣寺+京都&destination=北野天満宮+京都&travelmode=walking" }
+                    { text: "金閣寺 → 北野天滿宮", link: "https://www.google.com/maps/dir/?api=1&origin=金閣寺+京都&destination=北野天満宮+京都&travelmode=walking" }
+                ]
+            },
+            {
+                type: "dining", title: "餐廳推薦", icon: "fa-utensils",
+                list: [
+                    {
+                        name: "【午餐】金閣寺周邊 — 源光庵/茶屋",
+                        desc: "金閣寺參觀完後，附近有多間傳統茶屋提供簡單的京御膳或烏龍麵，輕鬆解決午餐。",
+                        link: "https://www.google.com/maps/search/?api=1&query=金閣寺+周辺+ランチ+京都"
+                    },
+                    {
+                        name: "【晚餐】梅田 — 大阪燒最後一戰",
+                        desc: "回大阪後的最後完整晚餐，推薦再吃一次大阪燒（きじ）或章魚燒（道頓堀風格）為這趟旅程畫下句點。",
+                        link: "https://www.google.com/maps/search/?api=1&query=きじ+新梅田食道街+お好み焼き"
+                    },
+                    {
+                        name: "【晚餐備案】梅田 旬彩 角倉",
+                        desc: "精緻的梅田日式料理，適合最後一個完整晚餐正式慶祝，建議提前確認座位。",
+                        link: "https://www.google.com/maps/search/?api=1&query=角倉+梅田+大阪"
+                    }
                 ]
             },
             {
                 type: "todo", title: "待辦", icon: "fa-clipboard-list",
                 list: [
-                    { name: "大阪市區最後補買藥妝、伴手禮 (馬力歐泡澡球)。" }
+                    { name: "大阪市區最後補買藥妝、伴手禮 (馬力歐泡澡球)。" },
+                    { name: "確認行李重量，避免明日超重（AirAsia 行李限制請對照訂票資訊）。" }
                 ],
-                hint: "買東西記得帶護照，預留30分鐘排隊退稅。"
+                hint: "買東西記得帶護照，預留30分鐘排隊退稅。退稅建議在大型百貨（阪急/LUCUA）辦，單店單次消費滿 ¥5,000 即可。"
             }
         ]
     },
