@@ -115,6 +115,11 @@ const itineraryData = [
                         name: "5️⃣ 友都八喜 (Yodobashi)",
                         desc: "電器與 3C 購物天堂！相機、美容儀一網打盡，免稅超方便。",
                         link: "https://www.google.com/maps/search/?api=1&query=ヨドバシカメラマルチメディア梅田"
+                    },
+                    {
+                        name: "6️⃣ 唐吉訶德 梅田店",
+                        desc: "藥妝、零食、伴手禮、生活雜貨一次掃貨，深夜也有開，適合逛街收尾。買滿 ¥5,000 可護照退稅。",
+                        link: "https://www.google.com/maps/search/?api=1&query=ドン・キホーテ+梅田+大阪"
                     }
                 ],
                 hint: "建議依據這份攻略鎖定 2~3 間百貨集中火力，買滿 5000 日圓記得拿實體護照去退稅！"
