@@ -197,6 +197,31 @@ const itineraryData = [
                 ]
             },
             {
+                type: "attraction", title: "📸 打卡推薦", icon: "fa-camera-retro",
+                list: [
+                    {
+                        name: "【熱門】法善寺横丁",
+                        desc: "青苔覆蓋的水掛不動明王＋石板小路昏黃燈光，入口在道頓堀麵包超人劇場旁，巷寬僅 2 公尺，夜間 20:00 後氣氛最濃厚。",
+                        link: "https://www.google.com/maps/search/?api=1&query=法善寺横丁+大阪"
+                    },
+                    {
+                        name: "【熱門】道頓堀運河夜景倒影",
+                        desc: "站在大黒橋往戎橋方向拍攝，霓虹燈完整倒映在運河水面，黃金時間 20:00–21:00。建議用手機夜間模式並靠橋欄穩定機身。",
+                        link: "https://www.google.com/maps/search/?api=1&query=大黒橋+道頓堀+大阪"
+                    },
+                    {
+                        name: "【小眾】堀江（南堀江）街區",
+                        desc: "大阪最有設計感的街區，獨立選物店、彩繪外牆、個性咖啡廳林立，整條南堀江通都適合漫步拍照。從心齋橋站搭長堀鶴見緑地線一站到「西大橋」即達。",
+                        link: "https://www.google.com/maps/search/?api=1&query=南堀江+大阪"
+                    },
+                    {
+                        name: "【小眾】千日前道具屋筋",
+                        desc: "整排廚具、食品模型、燈籠專賣街，日本生活感超強，拍出來很有質感。離法善寺横丁步行 3 分鐘。",
+                        link: "https://www.google.com/maps/search/?api=1&query=千日前道具屋筋+大阪"
+                    }
+                ]
+            },
+            {
                 type: "dining", title: "道頓堀晚餐推薦", icon: "fa-utensils",
                 list: [
                     {
@@ -294,6 +319,31 @@ const itineraryData = [
                         title: "野宮神社",
                         desc: "竹林小徑入口的古老神社，供奉縁結與學業，境內有黑木鳥居。",
                         link: "https://www.google.com/maps/search/?api=1&query=野宮神社+嵐山"
+                    }
+                ]
+            },
+            {
+                type: "attraction", title: "📸 打卡推薦", icon: "fa-camera-retro",
+                list: [
+                    {
+                        name: "【小眾】常寂光寺（Jojakko-ji）",
+                        desc: "苔蘚石階＋竹林圍繞，比竹林小徑幽靜 10 倍，人潮極少。入場 ¥500。從野宮神社往西步行約 8 分鐘。春天光線從縫隙灑下，最適合人像拍攝。",
+                        link: "https://www.google.com/maps/search/?api=1&query=常寂光寺+嵐山+京都"
+                    },
+                    {
+                        name: "【小眾】祇王寺（Gio-ji）",
+                        desc: "整片苔蘚庭院，春天光線均勻柔美、無強烈陰影，是業配感最低的夢幻場景。入場 ¥300，遊客極少。從常寂光寺步行 5 分鐘。",
+                        link: "https://www.google.com/maps/search/?api=1&query=祇王寺+嵐山+京都"
+                    },
+                    {
+                        name: "【熱門】% Arabica 嵐山（拍攝角度）",
+                        desc: "白色方形建築正面＋背後嵐山山景，建議從門口外退後 3 步拍全景。早上 10:00 前人潮少、光線從東照入最理想。",
+                        link: "https://www.google.com/maps/search/?api=1&query=%25+Arabica+Kyoto+Arashiyama"
+                    },
+                    {
+                        name: "【小眾】天龍寺 雲龍圖（法堂）",
+                        desc: "8 公尺天花板巨龍壁畫，仰拍特別震撼，需加購法堂參觀券 ¥500。通常週末開放，平日請先確認。",
+                        link: "https://www.google.com/maps/search/?api=1&query=天龍寺+法堂+雲龍図+京都"
                     }
                 ]
             },
@@ -401,6 +451,36 @@ const itineraryData = [
                 ]
             },
             {
+                type: "attraction", title: "📸 打卡推薦", icon: "fa-camera-retro",
+                list: [
+                    {
+                        name: "【熱門】八坂の塔 × 二年坂交叉口",
+                        desc: "京都最經典的構圖：石板路前景＋五重塔後景。站在二年坂往北拍，黃昏 16:30–17:30 光線最暖，人像拍攝絕佳位置。",
+                        link: "https://www.google.com/maps/search/?api=1&query=八坂の塔+法観寺+京都"
+                    },
+                    {
+                        name: "【熱門】石塀小路（Ishibei-koji）",
+                        desc: "狹窄石板小徑＋暖色燈籠，全程約 200 公尺，位於高台寺與都ホテル之間。傍晚燈籠亮起後是全京都最有氛圍的巷子，人潮反而比二年坂少。",
+                        link: "https://www.google.com/maps/search/?api=1&query=石塀小路+京都"
+                    },
+                    {
+                        name: "【小眾】南禅寺 水路閣（Suirokaku）",
+                        desc: "紅磚羅馬拱橋橫跨在禪寺庭院內，西洋×日式違和感極強，IG 超吸睛。從八坂神社步行約 20 分，或搭地下鐵東西線到蹴上駅。",
+                        link: "https://www.google.com/maps/search/?api=1&query=南禅寺+水路閣+京都"
+                    },
+                    {
+                        name: "【小眾】蹴上インクライン（Keage Incline）",
+                        desc: "廢棄傾斜鐵道兩側滿開桜花，4 月初為滿開期，是京都最夢幻的隱藏版賞桜勝地。從水路閣步行 5 分鐘。",
+                        link: "https://www.google.com/maps/search/?api=1&query=蹴上インクライン+京都"
+                    },
+                    {
+                        name: "【熱門】圓山公園 枝垂れ桜",
+                        desc: "京都最大的垂枝桜，樹齡百年，4 月初夜間點燈至 22:00，免費入園。拍攝建議：傍晚逆光或夜間點燈後，人像配合桜花光暈。",
+                        link: "https://www.google.com/maps/search/?api=1&query=円山公園+枝垂れ桜+京都"
+                    }
+                ]
+            },
+            {
                 type: "dining", title: "餐廳推薦", icon: "fa-utensils",
                 list: [
                     {
@@ -487,6 +567,31 @@ const itineraryData = [
                 ]
             },
             {
+                type: "attraction", title: "📸 打卡推薦", icon: "fa-camera-retro",
+                list: [
+                    {
+                        name: "【熱門】千本鳥居 晨間空景",
+                        desc: "08:30 前抵達，陽光從鳥居縫隙斜射成光束感。拍攝技巧：蹲低並廣角向前構圖到消失點，人像放中心讓鳥居形成隧道前景。",
+                        link: "https://www.google.com/maps/search/?api=1&query=伏見稲荷大社+千本鳥居"
+                    },
+                    {
+                        name: "【小眾】Vermillion Cafe（近稻荷）",
+                        desc: "紅狐主題外觀咖啡廳，窗邊座位可取景附近鳥居，適合拍咖啡×鳥居的組合。距伏見稻荷出口步行約 3 分鐘。",
+                        link: "https://www.google.com/maps/search/?api=1&query=Vermillion+Cafe+伏見稲荷"
+                    },
+                    {
+                        name: "【熱門】平等院 鳳凰堂倒影",
+                        desc: "阿字池倒映鳳凰堂，是最夢幻的對稱構圖。早上光線由東照射、水面平靜，建議 10:00 前拍攝，下午逆光效果差。",
+                        link: "https://www.google.com/maps/search/?api=1&query=平等院鳳凰堂+宇治"
+                    },
+                    {
+                        name: "【小眾】宇治上神社",
+                        desc: "世界遺產，苔蘚鋪道＋木造拜殿，遊客遠少於平等院，意境靜謐。從平等院步行約 10 分鐘過宇治川即達。",
+                        link: "https://www.google.com/maps/search/?api=1&query=宇治上神社+宇治"
+                    }
+                ]
+            },
+            {
                 type: "dining", title: "餐廳推薦", icon: "fa-utensils",
                 list: [
                     {
@@ -563,6 +668,31 @@ const itineraryData = [
                 ]
             },
             {
+                type: "attraction", title: "📸 打卡推薦", icon: "fa-camera-retro",
+                list: [
+                    {
+                        name: "【熱門】龍安寺 石庭（Ryoanji）",
+                        desc: "15 顆石、白砂枯山水，極簡美學，構圖只需讓砂紋延伸到畫面邊緣即可。入場 ¥600。從金閣寺搭市バス 59 號，一站即達。",
+                        link: "https://www.google.com/maps/search/?api=1&query=龍安寺+石庭+京都"
+                    },
+                    {
+                        name: "【熱門】仁和寺 五重塔（Ninnaji）",
+                        desc: "皇室御用寺廟，御室桜（矮桜）4 月初盛開，五重塔＋桜花前景是絕佳構圖。入場 ¥500。從龍安寺步行約 15 分鐘。",
+                        link: "https://www.google.com/maps/search/?api=1&query=仁和寺+五重塔+京都"
+                    },
+                    {
+                        name: "【小眾】さらさ西陣（Sarasa Nishijin Cafe）",
+                        desc: "舊公共澡堂改建的咖啡廳，內部磁磚裝飾牆極具特色，無最低消費，是京都 IG 密度最高的隱藏咖啡廳之一。從北野天滿宮步行約 12 分鐘。",
+                        link: "https://www.google.com/maps/search/?api=1&query=さらさ西陣+カフェ+京都"
+                    },
+                    {
+                        name: "【小眾】上七軒（Kamishichiken）",
+                        desc: "京都最古老的花街，比祇園少 90% 觀光客，傳統格子町家＋石板路，傍晚偶可遇到舞妓出勤，可自由拍攝建築。從北野天滿宮步行 5 分鐘。",
+                        link: "https://www.google.com/maps/search/?api=1&query=上七軒+京都"
+                    }
+                ]
+            },
+            {
                 type: "dining", title: "餐廳推薦", icon: "fa-utensils",
                 list: [
                     {
@@ -627,6 +757,22 @@ const itineraryData = [
                     `,
                     link: "https://www.google.com/maps/search/?api=1&query=焼肉力丸+梅田お初天神店+大阪"
                 }
+            },
+            {
+                type: "attraction", title: "📸 打卡推薦（燒肉前 & 候機前）", icon: "fa-camera-retro",
+                list: [
+                    {
+                        name: "【熱門】梅田スカイビル 空中庭園展望台",
+                        desc: "39 層樓全露天展望台，360° 俯瞰大阪市景，早上晴天能見度最高。開門 09:30，入場 ¥1,500。燒肉 11:30 前剛好可以去一趟，從旅店步行約 10 分鐘。",
+                        link: "https://www.google.com/maps/search/?api=1&query=梅田スカイビル+空中庭園展望台+大阪"
+                    },
+                    {
+                        name: "【小眾】北浜レトロビルヂング",
+                        desc: "大正時代維多利亞式磚紅建築咖啡廳，外牆正面構圖＋花窗是 IG 名片。午餐後前往關西機場途中可順路（地下鐵御堂筋線淀屋橋站步行 5 分）。",
+                        link: "https://www.google.com/maps/search/?api=1&query=北浜レトロビルヂング+大阪"
+                    }
+                ],
+                hint: "退房後行李寄放飯店，輕裝去スカイビル再回來取行李出發機場，動線最順。"
             },
             {
                 type: "transport", title: "交通", icon: "fa-train-tram",
