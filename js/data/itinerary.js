@@ -3,10 +3,39 @@ const itineraryData = [
         day: 1, date: "03/28", weekday: "六", title: "出發 → 抵達大阪", tags: ["機場", "大阪市"],
         sections: [
             {
-                type: "transport", title: "交通 (機場巴士直達)", icon: "fa-train-tram",
+                type: "transport", title: "✈️ 航班資訊", icon: "fa-plane",
                 table: [
-                    { time: "17:00", route: "關西機場 (KIX) T2", cost: "-", note: "Peach 抵達" },
-                    { time: "~18:30", route: "T2 1號月台 → 新阪急飯店", cost: "依售票機", note: "機場利木津巴士" },
+                    { time: "13:40", route: "桃園機場 T1 出發", cost: "-", note: "樂桃航空 MM026 起飛" },
+                    { time: "17:05", route: "關西機場 KIX T2 抵達", cost: "-", note: "MM026 / 訂位：G6JZEV" }
+                ],
+                collapsible: {
+                    title: "🧳 行李規定（去程 MM026）",
+                    content: `
+                        <div class="space-y-3 text-xs text-gray-600">
+                            <div class="flex items-start gap-2">
+                                <span class="text-lg">🎒</span>
+                                <div><b class="text-gray-800">個人物品</b>（1件）<br>必須置於前方座位下方。</div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-lg">💼</span>
+                                <div><b class="text-gray-800">手提行李</b>（1件）<br>尺寸上限 50×40×25 公分（長+寬+高≤115cm）</div>
+                            </div>
+                            <div class="bg-amber-50 border border-amber-200 rounded-lg p-2.5">
+                                <b class="text-amber-700">⚠️ 個人物品＋手提行李合計重量不得超過 7 公斤</b>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-lg">🧳</span>
+                                <div><b class="text-gray-800">托運行李</b>（1件 / 人）<br>重量上限 20 公斤，尺寸長+寬+高≤203 公分</div>
+                            </div>
+                        </div>
+                    `
+                },
+                hint: "13:40 起飛，建議 11:10 前抵達桃園 T1 完成報到。17:05 落地後辦理入境＋領行李約需 1 小時。"
+            },
+            {
+                type: "transport", title: "機場 → 飯店（利木津巴士）", icon: "fa-train-tram",
+                table: [
+                    { time: "~18:30", route: "KIX T2 1號月台 → 新阪急飯店", cost: "依售票機", note: "機場利木津巴士" },
                     { time: "~19:30", route: "新阪急飯店 → 關西旅店", cost: "-", note: "M14出口 步行" }
                 ],
                 collapsible: {
@@ -22,7 +51,6 @@ const itineraryData = [
                         <p class="mb-3 text-xs leading-relaxed text-gray-600">下車後往南走，找地下街入口 (Whity Umeda)，沿「谷町線/東梅田」指標走，從 <b>M14 出口</b> 上樓，步行 3-5 分鐘即達關西旅店。<br><span class="text-orange-500">※ 地下街像迷宮，初次也可在地面直接用 Google Maps 導航。</span></p>
                     `
                 },
-                hint: "17:00 落地後，辦理入境與拿行李抓 1 小時。選擇搭乘巴士是最輕鬆的方式喔！",
                 buttons: [
                     { text: "利木津巴士資訊", link: "https://www.kate.co.jp/tcn/" },
                     { text: "KIX T2 → 梅田導航", link: "https://www.google.com/maps/dir/?api=1&origin=Kansai+International+Airport+Terminal+2&destination=Hotel+New+Hankyu+Osaka&travelmode=transit" }
@@ -775,15 +803,38 @@ const itineraryData = [
                 hint: "退房後行李寄放飯店，輕裝去スカイビル再回來取行李出發機場，動線最順。"
             },
             {
-                type: "transport", title: "交通", icon: "fa-train-tram",
+                type: "transport", title: "✈️ 回程航班資訊", icon: "fa-plane",
                 table: [
-                    { time: "16:30", route: "市區 → 關西機場", cost: "約¥1000", note: "提早出發" },
-                    { time: "20:55", route: "KIX → TPE", cost: "-", note: "AirAsia 回程" }
+                    { time: "17:55", route: "KIX T1 報到截止", cost: "-", note: "起飛前 3 小時（最晚）" },
+                    { time: "20:55", route: "KIX T1 出發", cost: "-", note: "AirAsia X D7379 / 訂位：LDCE6G" },
+                    { time: "22:55", route: "桃園機場 T1 抵達", cost: "-", note: "到家！" }
                 ],
-                hint: "10:00 退房，行李可寄放飯店或梅田車站。最晚請於 17:55 抵達機場辦理報到手續。",
+                collapsible: {
+                    title: "🧳 行李規定（回程 D7379）",
+                    content: `
+                        <div class="space-y-3 text-xs text-gray-600">
+                            <div class="flex items-start gap-2">
+                                <span class="text-lg">🎒</span>
+                                <div><b class="text-gray-800">個人物品</b>（1件）<br>尺寸上限 40×30×10 公分，必須置於前方座位下方。</div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-lg">💼</span>
+                                <div><b class="text-gray-800">手提行李</b>（1件）<br>尺寸上限 56×36×23 公分</div>
+                            </div>
+                            <div class="bg-amber-50 border border-amber-200 rounded-lg p-2.5">
+                                <b class="text-amber-700">⚠️ 個人物品＋手提行李合計重量不得超過 7 公斤</b>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-lg">🧳</span>
+                                <div><b class="text-gray-800">托運行李</b>（1件 / 人）<br>重量上限 20 公斤，尺寸長+寬+高≤319 公分（81×119×119cm）</div>
+                            </div>
+                        </div>
+                    `
+                },
+                hint: "10:00 退房，行李可寄放飯店。請於 17:55 前抵達 KIX T1 完成報到（注意是 T1，非去程的 T2）。",
                 buttons: [
                     { text: "梅田 → 關西機場導航", link: "https://www.google.com/maps/dir/?api=1&origin=大阪梅田駅&destination=関西国際空港&travelmode=transit" },
-                    { text: "關西機場", link: "https://www.google.com/maps/search/?api=1&query=関西国際空港" }
+                    { text: "關西機場 T1 地圖", link: "https://www.google.com/maps/search/?api=1&query=関西国際空港+第1ターミナル" }
                 ]
             }
         ]
