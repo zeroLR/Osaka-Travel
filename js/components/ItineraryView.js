@@ -78,6 +78,7 @@ function initItineraryView(data) {
         if (sec.collapsible) html += buildCollapsible(sec.collapsible);
         if (sec.list)       html += buildList(sec.list);
         if (sec.card)       html += buildCard(sec.card);
+        if (sec.cards)      html += buildCards(sec.cards);
         if (sec.hint)       html += buildHint(sec.hint);
         if (sec.buttons)    html += buildButtons(sec.buttons);
         html += `</div>`;
@@ -167,6 +168,26 @@ function initItineraryView(data) {
                 </div>
             </div>
         `;
+    }
+
+    function buildCards(cards) {
+        const cardsHtml = cards.map(card => {
+            const titleHtml = card.link
+                ? `<a href="${card.link}" target="_blank" class="font-bold text-gray-800 text-xs flex items-center gap-1 hover:text-[#4A6E8C] transition-colors">
+                       ${card.title} <i class="fa-solid fa-map-location-dot text-[9px] text-[#4A6E8C] opacity-70 shrink-0"></i>
+                   </a>`
+                : `<span class="font-bold text-gray-800 text-xs block">${card.title}</span>`;
+            return `
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <div class="h-28 w-full bg-gray-200 bg-cover bg-center" style="background-image: url('${card.image}')"></div>
+                    <div class="p-2.5">
+                        ${titleHtml}
+                        ${card.desc ? `<p class="text-[11px] text-gray-500 leading-relaxed mt-0.5">${card.desc}</p>` : ''}
+                    </div>
+                </div>
+            `;
+        }).join('');
+        return `<div class="grid grid-cols-2 gap-2 mb-3">${cardsHtml}</div>`;
     }
 
     function buildHint(hint) {
