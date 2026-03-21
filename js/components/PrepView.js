@@ -9,12 +9,20 @@ function initPrepView(data) {
     setTimeout(updateProgress, 100);
 }
 
+function getPrepState(id, defaultChecked) {
+    try {
+        const saved = localStorage.getItem('prep-' + id);
+        return saved !== null ? saved === 'true' : defaultChecked;
+    } catch (e) {
+        return defaultChecked;
+    }
+}
+
 function renderPrepList(containerId, items) {
     const container = document.getElementById(containerId);
-    items.forEach(item => {
-        const saved = localStorage.getItem('prep-' + item.id);
-        const isChecked = saved !== null ? saved === 'true' : item.checked;
-        container.innerHTML += `
+    const html = items.map(item => {
+        const isChecked = getPrepState(item.id, item.checked);
+        return `
             <label class="custom-checkbox flex items-start gap-3 cursor-pointer group py-1">
                 <input type="checkbox" class="hidden" id="${item.id}" ${isChecked ? 'checked' : ''} onchange="savePrepItem('${item.id}', this.checked)">
                 <div class="w-5 h-5 mt-0.5 rounded border-2 border-gray-300 flex items-center justify-center bg-white transition-colors shrink-0">
@@ -23,11 +31,14 @@ function renderPrepList(containerId, items) {
                 <span class="text-sm text-gray-600 group-hover:text-gray-800 transition-colors leading-snug pt-0.5">${item.text}</span>
             </label>
         `;
-    });
+    }).join('');
+    container.innerHTML = html;
 }
 
 function savePrepItem(id, checked) {
-    localStorage.setItem('prep-' + id, checked);
+    try {
+        localStorage.setItem('prep-' + id, String(checked));
+    } catch (e) {}
     updateProgress();
 }
 
