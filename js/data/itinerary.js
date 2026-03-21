@@ -248,55 +248,49 @@ const itineraryData = [
                 type: "attraction", title: "景點導覽", icon: "fa-camera",
                 cards: [
                     {
-                        image: "https://images.unsplash.com/photo-1590403323067-154a1d41829e?q=80&w=600&auto=format&fit=crop",
+                        image: "https://static.gltjp.com/glt/data/article/21000/20457/20231002_120723_31e01505_w1920.webp",
                         title: "嵯峨野嵐山小火車",
                         desc: "09:00 出發，沿峽谷行駛約25分鐘，春季可欣賞嫩綠山景。",
                         link: "https://www.google.com/maps/search/?api=1&query=嵯峨野観光鉄道+嵯峨駅"
                     },
                     {
-                        image: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?q=80&w=600&auto=format&fit=crop",
+                        image: "https://image.kkday.com/v2/image/get/c_fit%2Cq_55%2Ct_webp%2Cw_960/s1.kkday.com/product_39329/20211001010329_KPUSU/jpg",
                         title: "保津川漂流（遊船）",
                         desc: "11:00 於亀岡乘船，穿越保津川峽谷約2小時，抵達嵐山。",
                         link: "https://www.google.com/maps/search/?api=1&query=保津川下り+亀岡乗船場"
                     },
                     {
-                        image: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?q=80&w=600&auto=format&fit=crop",
+                        image: "https://static.gltjp.com/glt/data/article/21000/20457/20260116_224236_7fd8f4c6_w1920.webp",
                         title: "渡月橋",
                         desc: "嵐山最具代表性的地標，橫跨桂川，春季兩岸山景如畫。",
                         link: "https://www.google.com/maps/search/?api=1&query=渡月橋+嵐山"
                     },
                     {
-                        image: "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=600&auto=format&fit=crop",
+                        image: "https://static.gltjp.com/glt/data/article/21000/20457/20231002_120328_0d1557f9_w1920.webp",
                         title: "嵐山竹林小徑",
                         desc: "高聳翠竹形成天然拱廊，晨間人少時最美，建議早上前往。",
                         link: "https://www.google.com/maps/search/?api=1&query=嵐山竹林+京都"
                     },
                     {
-                        image: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=600&auto=format&fit=crop",
+                        image: "https://www.e-japannavi.com/syuyu/kyoto/kyoto_sai_images/tenryuji_img700465_01.jpg",
                         title: "天龍寺",
                         desc: "世界遺產禪寺，曹源池庭園以借景嵐山聞名，入場 ¥500。",
                         link: "https://www.google.com/maps/search/?api=1&query=天龍寺+嵐山"
                     },
                     {
-                        image: "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?q=80&w=600&auto=format&fit=crop",
+                        image: "https://img.poibank.com/oxiQM_warpLK3OaZTpe6TNOkhVQ=/W3siZm9ybWF0IjoianBnIn0seyJrZXkiOiJzdWdnZXN0aW9uLzI2NzA2MDQ1LzM3NjgzNDYvMTY3ODI3NjA0MTk4NSJ9LHsicmVzaXplIjp7IndpZHRoIjoiMTUwNSJ9fV0=",
                         title: "嵐山公園",
-                        desc: "免費開放的丘陵公園，登上龜山地區可俯瞰保津川峽谷全景。",
+                        desc: "免費開放的丘陵公園與渡月橋旁桂川中洲，登上龜山地區可俯瞰保津川峽谷全景，春季河灘散步、賞山景的好去處。",
                         link: "https://www.google.com/maps/search/?api=1&query=嵐山公園+京都"
                     },
                     {
-                        image: "https://images.unsplash.com/photo-1559628233-100c798642d8?q=80&w=600&auto=format&fit=crop",
-                        title: "中之島地區",
-                        desc: "渡月橋旁桂川中洲，春季河灘散步、賞山景的好去處。",
-                        link: "https://www.google.com/maps/search/?api=1&query=中之島公園+嵐山"
-                    },
-                    {
-                        image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=600&auto=format&fit=crop",
+                        image: "https://i0.wp.com/arashiyama-sendou.com/wp-content/uploads/2023/06/4-1-1.jpg?resize=1024%2C768&ssl=1",
                         title: "嵐電嵐山駅 花の間",
                         desc: "嵐電嵐山站著名的花卉裝飾廁所「花の間」，是IG必拍打卡點。",
                         link: "https://www.google.com/maps/search/?api=1&query=嵐電嵐山駅+京都"
                     },
                     {
-                        image: "https://images.unsplash.com/photo-1542640244-7e672d6cef4e?q=80&w=600&auto=format&fit=crop",
+                        image: "https://caede-kyoto-asia.com/wp/wp-content/uploads/2020/04/02-22.jpg",
                         title: "野宮神社",
                         desc: "竹林小徑入口的古老神社，供奉縁結與學業，境內有黑木鳥居。",
                         link: "https://www.google.com/maps/search/?api=1&query=野宮神社+嵐山"
