@@ -48,7 +48,7 @@ const itineraryData = [
         ]
     },
     {
-        day: 2, date: "03/29", weekday: "日", title: "梅田全日血拚與美食", tags: ["梅田商圈", "購物", "美食"],
+        day: 2, date: "03/29", weekday: "日", title: "梅田血拚 × 心齋橋夜遊", tags: ["梅田商圈", "購物", "心齋橋", "道頓堀"],
         sections: [
             {
                 type: "dining", title: "早晨", icon: "fa-mug-hot",
@@ -125,7 +125,7 @@ const itineraryData = [
                 hint: "建議依據這份攻略鎖定 2~3 間百貨集中火力，買滿 5000 日圓記得拿實體護照去退稅！"
             },
             {
-                type: "dining", title: "周邊熱門美食推薦", icon: "fa-utensils",
+                type: "dining", title: "梅田美食（午餐 / 下午茶）", icon: "fa-utensils",
                 list: [
                     {
                         name: "炸牛排 本村 (LUCUA店)",
@@ -141,16 +141,78 @@ const itineraryData = [
                         name: "Grenier 千層酥",
                         desc: "【散步甜點】阪急百貨旁的超人氣排隊烤布蕾千層酥。",
                         link: "https://www.google.com/maps/search/?api=1&query=グルニエ+梅田+ミルフィーユ"
+                    }
+                ]
+            },
+            {
+                type: "transport", title: "18:00 放包 → 心齋橋出發", icon: "fa-train-tram",
+                table: [
+                    { time: "18:00", route: "梅田各百貨 → 關西旅店", cost: "-", note: "步行約10分，放下採買戰利品" },
+                    { time: "18:30", route: "東梅田駅 → 梅田駅（御堂筋線）", cost: "-", note: "站內轉乘，步行2分" },
+                    { time: "18:40", route: "梅田駅 → 心斎橋駅", cost: "約¥230", note: "御堂筋線，約7分" }
+                ],
+                collapsible: {
+                    title: "🗺️ 旅店 → 心齋橋詳細路線",
+                    content: `
+                        <h4 class="font-bold text-[#4A6E8C] mt-2 mb-1">1️⃣ 旅店 → 東梅田駅（步行 3 分）</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">從旅店出發，沿曾根崎通往西走，進入地下街後找「<b>御堂筋線 梅田駅</b>」指標，步行約 5 分鐘可銜接。</p>
+                        <h4 class="font-bold text-[#4A6E8C] mb-1">2️⃣ 梅田駅 → 心斎橋駅（御堂筋線，約 7 分）</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">搭地下鐵御堂筋線「<b>なんば方向</b>」，3 站即到「<b>心斎橋駅</b>」。出 6 號出口直接通往心斎橋筋商店街南端。</p>
+                        <h4 class="font-bold text-[#4A6E8C] mb-1">3️⃣ 心斎橋筋 → 道頓堀（步行 10 分）</h4>
+                        <p class="mb-2 text-xs leading-relaxed text-gray-600">沿心斎橋筋商店街一路往南逛，走到底過馬路就是戎橋（グリコサイン）與道頓堀。</p>
+                        <div class="bg-amber-50 border border-amber-200 rounded-lg p-2.5 text-xs text-gray-700">
+                            <strong class="text-amber-700">💡 回程：</strong>道頓堀なんば駅（御堂筋線）→ 梅田駅，同一條線原路返回，末班約 23:30。
+                        </div>
+                    `
+                },
+                hint: "放完包輕裝出發，心齋橋到道頓堀夜間人潮超多，包包建議換小肩包。",
+                buttons: [
+                    { text: "旅店 → 心齋橋導航", link: "https://www.google.com/maps/dir/?api=1&origin=Kansai+Hotel+Osaka&destination=心斎橋筋商店街+大阪&travelmode=transit" },
+                    { text: "道頓堀回旅店導航", link: "https://www.google.com/maps/dir/?api=1&origin=道頓堀+大阪&destination=Kansai+Hotel+Osaka&travelmode=transit" }
+                ]
+            },
+            {
+                type: "attraction", title: "心齋橋 & 道頓堀夜遊", icon: "fa-camera",
+                list: [
+                    {
+                        name: "心斎橋筋商店街",
+                        desc: "約 600 公尺的室內拱廊商店街，藥妝（松本清）、潮牌、甜點全集中，逛到道頓堀剛好熱身。",
+                        link: "https://www.google.com/maps/search/?api=1&query=心斎橋筋商店街+大阪"
                     },
                     {
-                        name: "きじ (木地) 大阪燒",
-                        desc: "【晚餐】新梅田食道街的米其林推薦大阪燒，在地人也愛吃。",
-                        link: "https://www.google.com/maps/search/?api=1&query=きじ+新梅田食道街+お好み焼き"
+                        name: "戎橋 × 固力果跑跑人看板",
+                        desc: "大阪最標誌性的打卡地點！站在戎橋上以固力果看板為背景拍照，夜晚燈光版最好看。",
+                        link: "https://www.google.com/maps/search/?api=1&query=戎橋+グリコサイン+道頓堀+大阪"
                     },
                     {
-                        name: "龜壽司 總本店",
-                        desc: "【晚餐備案】平價又新鮮的超人氣在地壽司老店。",
-                        link: "https://www.google.com/maps/search/?api=1&query=亀寿司総本店+大阪"
+                        name: "道頓堀遊覽船（とんぼりリバーウォーク）",
+                        desc: "可選搭遊覽船從水面仰望道頓堀霓虹，或沿河岸步道散步，夜景超美。",
+                        link: "https://www.google.com/maps/search/?api=1&query=とんぼりリバーウォーク+道頓堀"
+                    },
+                    {
+                        name: "美國村 (アメリカ村)",
+                        desc: "若想逛潮流二手服裝、個性小店，從心斎橋筋往西走 5 分鐘即達。",
+                        link: "https://www.google.com/maps/search/?api=1&query=アメリカ村+大阪"
+                    }
+                ]
+            },
+            {
+                type: "dining", title: "道頓堀晚餐推薦", icon: "fa-utensils",
+                list: [
+                    {
+                        name: "大阪燒 きじ（梅田備案已移此）/ 鶴橋風月",
+                        desc: "【晚餐】鶴橋風月道頓堀店是大阪燒名店，可在鐵板上自己加料，份量大適合逛街後補充體力。",
+                        link: "https://www.google.com/maps/search/?api=1&query=鶴橋風月+道頓堀+大阪"
+                    },
+                    {
+                        name: "金龍拉麵 道頓堀本店",
+                        desc: "24 小時營業的超人氣道頓堀地標拉麵，門口有巨龍裝飾超好認，深夜也能吃到熱騰騰的拉麵。",
+                        link: "https://www.google.com/maps/search/?api=1&query=金龍ラーメン+道頓堀本店+大阪"
+                    },
+                    {
+                        name: "くくる 章魚燒（道頓堀本店）",
+                        desc: "道頓堀最知名的章魚燒品牌之一，外脆內滑，現點現做，散步邊吃超適合。",
+                        link: "https://www.google.com/maps/search/?api=1&query=くくる+道頓堀+たこ焼き+大阪"
                     }
                 ]
             }
