@@ -35,8 +35,8 @@ const itineraryData = [
             {
                 type: "transport", title: "機場 → 飯店（利木津巴士）", icon: "fa-train-tram",
                 table: [
-                    { time: "~18:30", route: "KIX T2 1號月台 → 新阪急飯店", cost: "依售票機", note: "機場利木津巴士" },
-                    { time: "~19:30", route: "新阪急飯店 → 關西旅店", cost: "-", note: "M14出口 步行" }
+                    { time: "~18:30", route: "KIX T2 1號月台 → ホテル阪急レスパイア大阪", cost: "依售票機", note: "機場利木津巴士" },
+                    { time: "~19:30", route: "ホテル阪急レスパイア → 關西旅店", cost: "-", note: "步行約 10 分" }
                 ],
                 collapsible: {
                     title: "🚌 詳細搭車與步行路線 (實體票留念)",
@@ -45,7 +45,7 @@ const itineraryData = [
                         <p class="mb-3 text-xs leading-relaxed text-gray-600">在 T2 到達大廳外「自動售票機」購票。機器會吐出厚質紙本票券，上車時司機會撕走存根聯，剩下的部分記得收好做紀念！(建議準備千元鈔票)</p>
 
                         <h4 class="font-bold text-[#4A6E8C] mb-1">🚎 2. 搭車與下車</h4>
-                        <p class="mb-3 text-xs leading-relaxed text-gray-600">在 T2 巴士乘車處 <b>1號月台</b> 搭乘機場利木津巴士，直達梅田免搬行李轉車。<br>請於「<b>新阪急飯店 (Hotel New Hankyu)</b>」站下車。</p>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">在 T2 巴士乘車處 <b>1號月台</b> 搭乘機場利木津巴士，直達梅田免搬行李轉車。<br>請於「<b>ホテル阪急レスパイア大阪（ヨドバシ梅田タワー）</b>」站下車。</p>
 
                         <h4 class="font-bold text-[#4A6E8C] mb-1">🚶 3. 步行至飯店 (M14出口)</h4>
                         <p class="mb-3 text-xs leading-relaxed text-gray-600">下車後往南走，找地下街入口 (Whity Umeda)，沿「谷町線/東梅田」指標走，從 <b>M14 出口</b> 上樓，步行 3-5 分鐘即達關西旅店。<br><span class="text-orange-500">※ 地下街像迷宮，初次也可在地面直接用 Google Maps 導航。</span></p>
@@ -53,7 +53,8 @@ const itineraryData = [
                 },
                 buttons: [
                     { text: "利木津巴士資訊", link: "https://www.kate.co.jp/tcn/" },
-                    { text: "KIX T2 → 梅田導航", link: "https://www.google.com/maps/dir/?api=1&origin=Kansai+International+Airport+Terminal+2&destination=Hotel+New+Hankyu+Osaka&travelmode=transit" }
+                    { text: "ホテル阪急レスパイア 地圖", link: "https://maps.app.goo.gl/N3JAEYFiZPrYEbFc7" },
+                    { text: "巴士站 → 關西旅店 步行路線", link: "https://maps.app.goo.gl/Xu9ZtsgGFVpu1b269" }
                 ]
             },
             {
