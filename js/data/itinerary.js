@@ -53,7 +53,8 @@ const itineraryData = [
                 },
                 buttons: [
                     { text: "利木津巴士資訊", link: "https://www.kate.co.jp/tcn/" },
-                    { text: "ホテル阪急レスパイア 地圖", link: "https://maps.app.goo.gl/N3JAEYFiZPrYEbFc7" }
+                    { text: "ホテル阪急レスパイア 地圖", link: "https://maps.app.goo.gl/N3JAEYFiZPrYEbFc7" },
+                    { text: "巴士站 → 關西旅店 步行路線", link: "https://maps.app.goo.gl/Xu9ZtsgGFVpu1b269" }
                 ]
             },
             {
