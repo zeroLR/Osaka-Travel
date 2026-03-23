@@ -15,6 +15,7 @@
     <link rel="apple-touch-icon" href="icons/icon.svg">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -51,10 +52,18 @@
                         <span class="text-gray-500 text-sm">去程 (樂桃)</span>
                         <span class="font-medium text-sm">03/28 17:00 抵達</span>
                     </div>
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center mb-3">
                         <span class="text-gray-400 text-xs">路線</span>
                         <span class="font-bold text-gray-700">TPE → KIX (關西) T2</span>
                     </div>
+                    <button onclick="toggleForecast()" id="forecast-btn"
+                        class="w-full flex items-center justify-between bg-[#EEF3F8] text-[#4A6E8C] text-xs font-medium px-3 py-2 rounded-xl active:scale-95 transition-transform">
+                        <span class="flex items-center gap-1.5">
+                            <i class="fa-solid fa-chart-bar"></i> 查看 03/28 桃園機場人次預報
+                        </span>
+                        <i id="forecast-chevron" class="fa-solid fa-chevron-down transition-transform duration-200"></i>
+                    </button>
+                    <div id="forecast-panel" class="hidden mt-2"></div>
                 </div>
                 <div>
                     <div class="flex justify-between items-center mb-1">
@@ -365,6 +374,7 @@
     <script src="js/components/Navigation.js"></script>
     <script src="js/components/ItineraryView.js"></script>
     <script src="js/components/PrepView.js"></script>
+    <script src="js/components/AirportForecast.js"></script>
 
     <!-- 應用入口 -->
     <script src="js/app.js"></script>
