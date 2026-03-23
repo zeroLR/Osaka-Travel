@@ -55,7 +55,7 @@
                         <span class="text-gray-400 text-xs">路線</span>
                         <span class="font-bold text-gray-700">TPE → KIX (關西) T2</span>
                     </div>
-                    <a href="https://www.taoyuan-airport.com/uploads/fos/2026_03_28_update.xls" target="_blank"
+                    <a id="forecast-link" href="#" target="_blank"
                         class="w-full flex items-center justify-between bg-[#EEF3F8] text-[#4A6E8C] text-xs font-medium px-3 py-2 rounded-xl active:scale-95 transition-transform">
                         <span class="flex items-center gap-1.5">
                             <i class="fa-solid fa-chart-bar"></i> 查看 03/28 桃園機場人次預報
@@ -375,6 +375,17 @@
 
     <!-- 應用入口 -->
     <script src="js/app.js"></script>
+
+    <!-- 動態產生人次預報連結 -->
+    <script>
+        (function () {
+            const d = new Date();
+            const pad = n => String(n).padStart(2, '0');
+            const filename = `${d.getFullYear()}_${pad(d.getMonth() + 1)}_${pad(d.getDate())}_update.xls`;
+            document.getElementById('forecast-link').href =
+                'https://www.taoyuan-airport.com/uploads/fos/' + filename;
+        })();
+    </script>
 
     <!-- Service Worker 註冊 -->
     <script>
