@@ -253,6 +253,11 @@ const itineraryData = [
                 type: "dining", title: "道頓堀晚餐推薦", icon: "fa-utensils",
                 list: [
                     {
+                        name: "大阪燒 千房 千日前本店",
+                        desc: "【晚餐首選】創業 1973 年的大阪燒老舖，千日前本店是發源地，料多實在、醬料層次豐富。距道頓堀步行 3 分鐘，有空就過去！",
+                        link: "https://maps.app.goo.gl/zete2pYgNTqen5yV7"
+                    },
+                    {
                         name: "大阪燒 きじ（梅田備案已移此）/ 鶴橋風月",
                         desc: "【晚餐】鶴橋風月道頓堀店是大阪燒名店，可在鐵板上自己加料，份量大適合逛街後補充體力。",
                         link: "https://www.google.com/maps/search/?api=1&query=鶴橋風月+道頓堀+大阪"
