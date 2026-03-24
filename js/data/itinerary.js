@@ -147,7 +147,7 @@ const itineraryData = [
                     },
                     {
                         name: "6️⃣ 唐吉訶德 梅田店",
-                        desc: "藥妝、零食、伴手禮、生活雜貨一次掃貨，深夜也有開，適合逛街收尾。買滿 ¥5,000 可護照退稅。",
+                        desc: "藥妝、零食、伴手禮、生活雜貨一次掃貨，深夜也有開，適合逛街收尾。買滿 ¥5,000 可護照退稅。<br><br>🛒 <b>必買清單</b><br>・SALONIA 無線離子夾（⚠️ 電池須拆下放隨身行李）<br>・Kewpie 丘比蛋黃醬",
                         link: "https://www.google.com/maps/search/?api=1&query=ドン・キホーテ+梅田+大阪"
                     }
                 ],
