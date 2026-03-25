@@ -73,50 +73,6 @@ const itineraryData = [
                 list: [
                     { name: "幫 Brad 買 2 萬日圓 Switch 點數 (超商)" }
                 ]
-            },
-            {
-                type: "attraction", title: "🗣️ 日語溝通小幫手", icon: "fa-comments",
-                collapsible: {
-                    icon: "fa-language",
-                    title: "今日實用日語｜機場・交通・飯店",
-                    content: `
-                        <div class="space-y-0 text-xs">
-                            <div class="grid grid-cols-3 gap-x-3 py-1.5 border-b border-gray-200 text-gray-400 text-[10px] font-semibold">
-                                <span>日文</span><span>羅馬拼音</span><span>中文意思</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">すみません</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">sumimasen</span>
-                                <span class="text-gray-500">不好意思／打擾一下</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">〜はどこですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">~ wa doko desu ka</span>
-                                <span class="text-gray-500">～在哪裡？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">チェックインを<br>お願いします</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">chekku in wo<br>onegai shimasu</span>
-                                <span class="text-gray-500">我要辦理入住</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">荷物を預けても<br>いいですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">nimotsu wo azukete<br>mo ii desu ka</span>
-                                <span class="text-gray-500">可以寄放行李嗎？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">何時にチェック<br>アウトですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">nanji ni chekku auto<br>desu ka</span>
-                                <span class="text-gray-500">幾點退房？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2">
-                                <span class="font-medium text-gray-800">ありがとう<br>ございます</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">arigatō gozaimasu</span>
-                                <span class="text-gray-500">非常感謝</span>
-                            </div>
-                        </div>
-                    `
-                }
             }
         ]
     },
@@ -318,55 +274,6 @@ const itineraryData = [
                         link: "https://www.google.com/maps/search/?api=1&query=くくる+道頓堀+たこ焼き+大阪"
                     }
                 ]
-            },
-            {
-                type: "attraction", title: "🗣️ 日語溝通小幫手", icon: "fa-comments",
-                collapsible: {
-                    icon: "fa-language",
-                    title: "今日實用日語｜購物・退稅・試穿",
-                    content: `
-                        <div class="space-y-0 text-xs">
-                            <div class="grid grid-cols-3 gap-x-3 py-1.5 border-b border-gray-200 text-gray-400 text-[10px] font-semibold">
-                                <span>日文</span><span>羅馬拼音</span><span>中文意思</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">いくらですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">ikura desu ka</span>
-                                <span class="text-gray-500">多少錢？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">免税できますか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">menzei dekimasu ka</span>
-                                <span class="text-gray-500">可以退稅嗎？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">カードは<br>使えますか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">kādo wa<br>tsukaemasu ka</span>
-                                <span class="text-gray-500">可以刷卡嗎？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">試着しても<br>いいですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">shichaku shite mo<br>ii desu ka</span>
-                                <span class="text-gray-500">可以試穿嗎？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">〜サイズは<br>ありますか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">~ saizu wa<br>arimasu ka</span>
-                                <span class="text-gray-500">有～尺寸嗎？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">これをください</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">kore wo kudasai</span>
-                                <span class="text-gray-500">我要這個</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2">
-                                <span class="font-medium text-gray-800">袋をください</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">fukuro wo kudasai</span>
-                                <span class="text-gray-500">請給我袋子</span>
-                            </div>
-                        </div>
-                    `
-                }
             }
         ]
     },
@@ -518,50 +425,6 @@ const itineraryData = [
                         link: "https://www.google.com/maps/search/?api=1&query=お初天神通り+大阪"
                     }
                 ]
-            },
-            {
-                type: "attraction", title: "🗣️ 日語溝通小幫手", icon: "fa-comments",
-                collapsible: {
-                    icon: "fa-language",
-                    title: "今日實用日語｜觀光・寺廟・交通",
-                    content: `
-                        <div class="space-y-0 text-xs">
-                            <div class="grid grid-cols-3 gap-x-3 py-1.5 border-b border-gray-200 text-gray-400 text-[10px] font-semibold">
-                                <span>日文</span><span>羅馬拼音</span><span>中文意思</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">写真を撮っても<br>いいですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">shashin wo totte mo<br>ii desu ka</span>
-                                <span class="text-gray-500">可以拍照嗎？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">入場料は<br>いくらですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">nyūjōryō wa<br>ikura desu ka</span>
-                                <span class="text-gray-500">入場費多少？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">次の電車は<br>何時ですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">tsugi no densha wa<br>nanji desu ka</span>
-                                <span class="text-gray-500">下一班電車幾點？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">おすすめは<br>何ですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">osusume wa<br>nan desu ka</span>
-                                <span class="text-gray-500">有什麼推薦？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">予約が<br>必要ですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">yoyaku ga<br>hitsuyō desu ka</span>
-                                <span class="text-gray-500">需要預約嗎？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2">
-                                <span class="font-medium text-gray-800">どのくらい<br>時間がかかりますか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">dono kurai jikan ga<br>kakarimasu ka</span>
-                                <span class="text-gray-500">大約需要多少時間？</span>
-                            </div>
-                        </div>
-                    `
-                }
             }
         ]
     },
@@ -675,50 +538,6 @@ const itineraryData = [
                         link: "https://www.google.com/maps/search/?api=1&query=麺屋たけいち+京都"
                     }
                 ]
-            },
-            {
-                type: "attraction", title: "🗣️ 日語溝通小幫手", icon: "fa-comments",
-                collapsible: {
-                    icon: "fa-language",
-                    title: "今日實用日語｜街道小食・問路・拍照",
-                    content: `
-                        <div class="space-y-0 text-xs">
-                            <div class="grid grid-cols-3 gap-x-3 py-1.5 border-b border-gray-200 text-gray-400 text-[10px] font-semibold">
-                                <span>日文</span><span>羅馬拼音</span><span>中文意思</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">これは何ですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">kore wa nan desu ka</span>
-                                <span class="text-gray-500">這是什麼？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">一つください</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">hitotsu kudasai</span>
-                                <span class="text-gray-500">請給我一個</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">食べ歩きできますか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">tabearu ki dekimasu ka</span>
-                                <span class="text-gray-500">可以邊走邊吃嗎？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">トイレはどこですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">toire wa doko desu ka</span>
-                                <span class="text-gray-500">廁所在哪裡？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">辛いですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">karai desu ka</span>
-                                <span class="text-gray-500">辣嗎？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2">
-                                <span class="font-medium text-gray-800">写真を一緒に<br>撮ってもいいですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">shashin wo issho ni<br>totte mo ii desu ka</span>
-                                <span class="text-gray-500">可以一起拍照嗎？</span>
-                            </div>
-                        </div>
-                    `
-                }
             }
         ]
     },
@@ -831,45 +650,6 @@ const itineraryData = [
                     }
                 ],
                 hint: "今日行程早出（07:30），記得前晚睡好！伏見稻荷建議 08:30 前抵達避人潮，拍到空鳥居的成就感超強。"
-            },
-            {
-                type: "attraction", title: "🗣️ 日語溝通小幫手", icon: "fa-comments",
-                collapsible: {
-                    icon: "fa-language",
-                    title: "今日實用日語｜爬山・甜點・交通",
-                    content: `
-                        <div class="space-y-0 text-xs">
-                            <div class="grid grid-cols-3 gap-x-3 py-1.5 border-b border-gray-200 text-gray-400 text-[10px] font-semibold">
-                                <span>日文</span><span>羅馬拼音</span><span>中文意思</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">頂上まで<br>何分かかりますか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">chōjō made nanpun<br>kakarimasu ka</span>
-                                <span class="text-gray-500">到山頂需幾分鐘？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">〜番の乗り場は<br>どこですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">~ ban no noriba wa<br>doko desu ka</span>
-                                <span class="text-gray-500">～號站牌在哪裡？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">抹茶アイスを<br>ひとつください</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">maccha aisu wo<br>hitotsu kudasai</span>
-                                <span class="text-gray-500">請給我一個抹茶冰淇淋</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">少し休みましょう</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">sukoshi yasumimashou</span>
-                                <span class="text-gray-500">稍微休息一下</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2">
-                                <span class="font-medium text-gray-800">疲れましたね</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">tsukaremashita ne</span>
-                                <span class="text-gray-500">好累啊（共鳴句）</span>
-                            </div>
-                        </div>
-                    `
-                }
             }
         ]
     },
@@ -973,45 +753,6 @@ const itineraryData = [
                     { name: "確認行李重量，避免明日超重（AirAsia 行李限制請對照訂票資訊）。" }
                 ],
                 hint: "買東西記得帶護照，預留30分鐘排隊退稅。退稅建議在大型百貨（阪急/LUCUA）辦，單店單次消費滿 ¥5,000 即可。"
-            },
-            {
-                type: "attraction", title: "🗣️ 日語溝通小幫手", icon: "fa-comments",
-                collapsible: {
-                    icon: "fa-language",
-                    title: "今日實用日語｜購物掃貨・伴手禮",
-                    content: `
-                        <div class="space-y-0 text-xs">
-                            <div class="grid grid-cols-3 gap-x-3 py-1.5 border-b border-gray-200 text-gray-400 text-[10px] font-semibold">
-                                <span>日文</span><span>羅馬拼音</span><span>中文意思</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">全部でいくらですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">zenbu de ikura desu ka</span>
-                                <span class="text-gray-500">全部共多少錢？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">お土産に何が<br>いいですか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">omiyage ni nani ga<br>ii desu ka</span>
-                                <span class="text-gray-500">伴手禮推薦什麼？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">まとめて<br>買いたいのですが</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">matomete kaitai<br>no desu ga</span>
-                                <span class="text-gray-500">我想一起購買</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">ポイントカードは<br>ありますか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">pointo kādo wa<br>arimasu ka</span>
-                                <span class="text-gray-500">有集點卡嗎？</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2">
-                                <span class="font-medium text-gray-800">この辺にコンビニは<br>ありますか</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">kono hen ni konbini wa<br>arimasu ka</span>
-                                <span class="text-gray-500">附近有便利商店嗎？</span>
-                            </div>
-                        </div>
-                    `
-                }
             }
         ]
     },
@@ -1101,50 +842,6 @@ const itineraryData = [
                     { text: "梅田 → 關西機場導航", link: "https://www.google.com/maps/dir/?api=1&origin=大阪梅田駅&destination=関西国際空港&travelmode=transit" },
                     { text: "關西機場 T1 地圖", link: "https://www.google.com/maps/search/?api=1&query=関西国際空港+第1ターミナル" }
                 ]
-            },
-            {
-                type: "attraction", title: "🗣️ 日語溝通小幫手", icon: "fa-comments",
-                collapsible: {
-                    icon: "fa-language",
-                    title: "今日實用日語｜燒肉・結帳・道別",
-                    content: `
-                        <div class="space-y-0 text-xs">
-                            <div class="grid grid-cols-3 gap-x-3 py-1.5 border-b border-gray-200 text-gray-400 text-[10px] font-semibold">
-                                <span>日文</span><span>羅馬拼音</span><span>中文意思</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">席の予約を<br>しています</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">seki no yoyaku wo<br>shite imasu</span>
-                                <span class="text-gray-500">我有預約座位</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">美味しかったです</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">oishikatta desu</span>
-                                <span class="text-gray-500">非常好吃</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">お会計を<br>お願いします</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">okaikei wo<br>onegai shimasu</span>
-                                <span class="text-gray-500">請結帳</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">領収書を<br>ください</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">ryōshūsho wo<br>kudasai</span>
-                                <span class="text-gray-500">請給我收據</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2 border-b border-gray-100">
-                                <span class="font-medium text-gray-800">また来ます</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">mata kimasu</span>
-                                <span class="text-gray-500">我還會再來</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-x-3 py-2">
-                                <span class="font-medium text-gray-800">日本が大好きです</span>
-                                <span class="text-[#4A6E8C] text-[10px] leading-relaxed">Nihon ga daisuki desu</span>
-                                <span class="text-gray-500">我非常喜歡日本</span>
-                            </div>
-                        </div>
-                    `
-                }
             }
         ]
     }
