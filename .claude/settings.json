@@ -2,11 +2,11 @@
   "hooks": {
     "PostToolUse": [
       {
-        "matcher": "Bash",
+        "matcher": "Write|Edit",
         "hooks": [
           {
             "type": "command",
-            "command": "jq -r '.tool_input.command' | grep -q 'git commit' && echo '{\"systemMessage\": \"⚠️ 記得更新 Service Worker 的 cache 版本！\"}' || true"
+            "command": "FILE=$(jq -r '.tool_input.file_path // empty'); echo \"$FILE\" | grep -qv 'sw\\.js' || exit 0; CURRENT=$(sed -n 's/.*osaka-travel-v\\([0-9]*\\).*/\\1/p' /home/user/Osaka-Travel/sw.js | head -1); [ -z \"$CURRENT\" ] && exit 0; NEXT=$((CURRENT + 1)); sed -i \"s/osaka-travel-v${CURRENT}/osaka-travel-v${NEXT}/\" /home/user/Osaka-Travel/sw.js 2>/dev/null || true"
           }
         ]
       }
