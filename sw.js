@@ -1,4 +1,4 @@
-const CACHE_NAME = 'osaka-travel-v18';
+const CACHE_NAME = 'osaka-travel-v26';
 
 const LOCAL_ASSETS = [
     './',

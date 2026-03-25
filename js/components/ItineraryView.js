@@ -116,7 +116,7 @@ function initItineraryView(data) {
         return `
             <details class="group bg-blue-50 rounded-xl border border-blue-100 shadow-sm mb-3 overflow-hidden">
                 <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-3 text-[#4A6E8C] hover:bg-blue-100 transition outline-none">
-                    <span class="flex items-center gap-2 text-sm"><i class="fa-solid fa-map-location-dot"></i> ${collapsible.title}</span>
+                    <span class="flex items-center gap-2 text-sm"><i class="fa-solid ${collapsible.icon || 'fa-map-location-dot'}"></i> ${collapsible.title}</span>
                     <span class="transition group-open:rotate-180">
                         <i class="fa-solid fa-chevron-down text-[#4A6E8C]"></i>
                     </span>
