@@ -174,11 +174,41 @@ const itineraryData = [
                 ]
             },
             {
-                type: "transport", title: "18:00 放包 → 心齋橋出發", icon: "fa-train-tram",
+                type: "attraction", title: "🌇 梅田スカイビル 夕陽＆夜景", icon: "fa-binoculars",
                 table: [
-                    { time: "18:00", route: "梅田各百貨 → 關西旅店", cost: "-", note: "步行約10分，放下採買戰利品" },
-                    { time: "18:30", route: "東梅田駅 → 梅田駅（御堂筋線）", cost: "-", note: "站內轉乘，步行2分" },
-                    { time: "18:40", route: "梅田駅 → 心斎橋駅", cost: "約¥230", note: "御堂筋線，約7分" }
+                    { time: "17:00", route: "梅田各百貨 → 梅田スカイビル", cost: "-", note: "步行約 10–12 分，往大阪站西北方向" },
+                    { time: "17:00–18:00", route: "空中庭園展望台（39F / 40F）", cost: "¥1,500／人", note: "39F 室內 + 40F 露天 Sky Walk" },
+                    { time: "~18:00", route: "日落觀賞（最佳時刻）", cost: "-", note: "3/29 日落約 18:00，黃金光線" },
+                    { time: "~18:30", route: "離開スカイビル", cost: "-", note: "欣賞完初夜景後步行返回旅店" }
+                ],
+                collapsible: {
+                    title: "🏢 展望台詳細資訊",
+                    content: `
+                        <h4 class="font-bold text-[#4A6E8C] mt-2 mb-1">📍 交通方式</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">從梅田各大百貨或 Grand Front 往西北步行約 10–12 分即達。亦可從 JR 大阪駅穿越地下通道，沿「スカイビル」指標走。</p>
+
+                        <h4 class="font-bold text-[#4A6E8C] mb-1">🌇 樓層說明</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600"><b>39F 室內展望台：</b>全景落地玻璃窗，傍晚轉涼時可在室內賞景。<br><b>40F 空中庭園（Sky Walk）：</b>約 100 公尺周長的露天環形走廊，360° 視野無遮蔽，腳下透明地板設計，刺激感十足。</p>
+
+                        <h4 class="font-bold text-[#4A6E8C] mb-1">📷 3/29 拍攝建議</h4>
+                        <p class="mb-3 text-xs leading-relaxed text-gray-600">日落前在<b>西側</b>可拍大阪灣剪影；18:00 前後轉到<b>東側</b>捕捉梅田高樓群亮燈初期——夕陽餘光＋霓虹燈並存的「魔幻時刻」約持續 20 分鐘，最為好看。手機開「日落模式」，露天風大記得壓穩。</p>
+
+                        <div class="bg-amber-50 border border-amber-200 rounded-lg p-2.5 text-xs text-gray-700">
+                            <strong class="text-amber-700">⏰ 票務資訊：</strong>門票 ¥1,500／人，現場購票即可，無需預約。營業時間 9:30–22:30（最終入場 22:00）。
+                        </div>
+                    `
+                },
+                hint: "3/29 日落約 18:00，17:30 前抵達可卡到最佳黃金光線。露天 40F 風大，薄外套記得帶！",
+                buttons: [
+                    { text: "梅田スカイビル 地圖", link: "https://www.google.com/maps/search/?api=1&query=梅田スカイビル+空中庭園展望台+大阪" }
+                ]
+            },
+            {
+                type: "transport", title: "19:00 放包 → 心齋橋出發", icon: "fa-train-tram",
+                table: [
+                    { time: "18:30", route: "スカイビル → 關西旅店", cost: "-", note: "步行約10分，放下採買戰利品" },
+                    { time: "19:00", route: "東梅田駅 → 梅田駅（御堂筋線）", cost: "-", note: "站內轉乘，步行2分" },
+                    { time: "19:10", route: "梅田駅 → 心斎橋駅", cost: "約¥230", note: "御堂筋線，約7分" }
                 ],
                 collapsible: {
                     title: "🗺️ 旅店 → 心齋橋詳細路線",
