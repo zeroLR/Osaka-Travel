@@ -645,7 +645,8 @@ const itineraryData = [
                 type: "transport", title: "交通", icon: "fa-train-tram",
                 table: [
                     { time: "07:30", route: "大阪梅田 → 淀屋橋", cost: "-", note: "地下鐵御堂筋線，約10分" },
-                    { time: "07:45", route: "淀屋橋 → 伏見稻荷", cost: "約¥420", note: "京阪本線特急，約30分" },
+                    { time: "07:45", route: "淀屋橋 → 丹波橋（プレミアムカー）", cost: "乗車券¥400＋指定席¥500", note: "京阪特急 プレミアムカー，約25分" },
+                    { time: "~08:10", route: "丹波橋 → 伏見稻荷", cost: "（含於乗車券）", note: "京阪普通，約5分" },
                     { time: "11:00", route: "伏見稻荷 → 中書島", cost: "約¥200", note: "京阪本線，約10分" },
                     { time: "11:15", route: "中書島 → 宇治", cost: "約¥200", note: "京阪宇治線，約20分" },
                     { time: "下午", route: "宇治 → 大阪梅田", cost: "約¥500", note: "京阪宇治線→京阪本線→地下鐵" }
@@ -653,11 +654,27 @@ const itineraryData = [
                 collapsible: {
                     title: "🚆 第五天完整交通路線",
                     content: `
-                        <h4 class="font-bold text-[#4A6E8C] mt-2 mb-1">1️⃣ 梅田 → 伏見稻荷 (約40分)</h4>
+                        <div class="bg-[#EAF2F8] border border-[#BCE0FD] rounded-xl p-3 mb-4">
+                            <h4 class="font-bold text-[#4A6E8C] mb-2 flex items-center gap-1.5"><i class="fa-solid fa-star text-yellow-500"></i> プレミアムカー（Premium Car）</h4>
+                            <div class="space-y-1.5 text-xs text-gray-700">
+                                <p><b>車廂：</b>特急列車 <b>6 號車</b>（從京都端起算）— 全席指定，2＋1 寬幅座椅配置</p>
+                                <p><b>設備：</b>大型摺疊桌、電源插座（每座）、免費 Wi-Fi</p>
+                                <p><b>費用：</b>乗車券 ¥400 ＋ プレミアムカー指定席券 <b>¥500</b>（合計 ¥900）</p>
+                                <p><b>注意：</b>伏見稲荷駅 <span class="text-red-600 font-bold">不停特急</span>，需在 <b>丹波橋駅</b> 下車轉乘普通車（約5分）至伏見稲荷駅</p>
+                            </div>
+                            <div class="mt-2.5 pt-2 border-t border-[#BCE0FD] space-y-1 text-xs text-gray-600">
+                                <p class="font-bold text-[#4A6E8C]">🎫 購票方式</p>
+                                <p>① <b>網路預約</b>（推薦）：官網免費註冊「プレミアムカークラブ」，可選座，發車前1分鐘截止</p>
+                                <p>② <b>月台券售機</b>：特急停靠站月台設有キャッシュレス券売機，可刷 IC 卡 / QR 碼付款</p>
+                                <p>③ <b>車内購票</b>：有空席時可向車掌購買，出發前3分鐘截止</p>
+                                <p class="text-gray-400">※ 開售時間：乘車日 <b>14 天前</b> 上午 10:00 起</p>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-[#4A6E8C] mt-2 mb-1">1️⃣ 梅田 → 伏見稻荷 (約45分)</h4>
                         <p class="mb-3 text-xs leading-relaxed text-gray-600">
-                            <b>梅田駅</b>（地下鐵御堂筋線）→ <b>淀屋橋駅</b> 換乘 <b>京阪本線特急</b>，
-                            直達 <b>伏見稻荷駅</b>，出站步行 3 分鐘到大社入口。<br>
-                            <span class="text-gray-400">※ ICOCA 可直接刷，無需購票。</span>
+                            <b>梅田駅</b>（地下鐵御堂筋線）→ <b>淀屋橋駅</b> 換乘 <b>京阪特急 プレミアムカー（6號車）</b>，
+                            至 <b>丹波橋駅</b> 下車，轉乘普通車（同月台）2 站到 <b>伏見稲荷駅</b>，出站步行 3 分鐘到大社入口。<br>
+                            <span class="text-gray-400">※ 乘車券刷 ICOCA，另購プレミアムカー券 ¥500。</span>
                         </p>
                         <h4 class="font-bold text-[#4A6E8C] mb-1">2️⃣ 伏見稻荷 → 宇治 (換車，約30分)</h4>
                         <p class="mb-3 text-xs leading-relaxed text-gray-600">
@@ -675,8 +692,9 @@ const itineraryData = [
                         </div>
                     `
                 },
-                hint: "今日最早出發（07:30），建議前晚準備好 ICOCA 餘額。伏見稻荷人潮很多，08:30 前抵達才能拍到空鳥居。",
+                hint: "今日最早出發（07:30），建議前晚準備好 ICOCA 餘額、預先在官網訂好 プレミアムカー（¥500）。伏見稻荷人潮很多，08:30 前抵達才能拍到空鳥居。",
                 buttons: [
+                    { text: "プレミアムカー 購票・預約", link: "https://www.keihan.co.jp/traffic/premiumcar/ticket/" },
                     { text: "大阪 → 伏見稻荷導航", link: "https://www.google.com/maps/dir/?api=1&origin=大阪駅&destination=伏見稲荷大社&travelmode=transit" },
                     { text: "伏見 → 宇治導航", link: "https://www.google.com/maps/dir/?api=1&origin=伏見稲荷大社&destination=平等院鳳凰堂+宇治&travelmode=transit" },
                     { text: "宇治 → 大阪導航", link: "https://www.google.com/maps/dir/?api=1&origin=宇治駅+京都&destination=大阪梅田駅&travelmode=transit" }
