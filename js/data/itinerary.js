@@ -334,6 +334,73 @@ const itineraryData = [
                 ]
             },
             {
+                type: "transport", title: "🗺️ 小火車抵達後 → 前往乘船場", icon: "fa-route",
+                collapsible: {
+                    title: "三種接駁路線（トロッコ亀岡駅 → 保津川乘船場）",
+                    content: `
+                        <p class="text-[11px] text-gray-500 mb-3">嵯峨野小火車終點「トロッコ亀岡駅」距保津川乘船場約 2.5km，以下三種方式皆可抵達。</p>
+
+                        <div class="space-y-4">
+
+                            <div class="rounded-lg border border-amber-200 bg-amber-50 p-3">
+                                <div class="flex items-center gap-2 mb-1.5">
+                                    <span class="bg-amber-400 text-white text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0">① 推薦</span>
+                                    <span class="font-bold text-gray-800 text-sm">京馬車</span>
+                                    <span class="text-[11px] text-gray-500 ml-auto shrink-0">約25分・¥1,200／人</span>
+                                </div>
+                                <p class="text-xs text-gray-600 leading-relaxed mb-2">從亀岡站旁乘坐馬拉觀光馬車，穿越田野風光直達乘船場，最省力也最有氣氛，強烈推薦。每小時 :35 發車（09:35–14:35），需在 <b>トロッコ嵯峨駅</b>（出發站）事先購票。</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <a href="https://www.kyobasha.jp/ticket/" target="_blank" class="bg-amber-500 text-white px-2.5 py-1 rounded-full text-[10px] font-medium flex items-center gap-1 active:scale-95 transition-transform">
+                                        <i class="fa-solid fa-ticket text-[9px]"></i> 官網票務資訊
+                                    </a>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=京馬車+亀岡+嵯峨野観光鉄道" target="_blank" class="bg-white text-gray-600 border border-gray-200 px-2.5 py-1 rounded-full text-[10px] font-medium flex items-center gap-1 active:scale-95 transition-transform">
+                                        <i class="fa-solid fa-map-location-dot text-[9px]"></i> 乘車處地圖
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="rounded-lg border border-blue-200 bg-blue-50 p-3">
+                                <div class="flex items-center gap-2 mb-1.5">
+                                    <span class="bg-[#4A6E8C] text-white text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0">②</span>
+                                    <span class="font-bold text-gray-800 text-sm">步行 + JR山陰本線 + 步行</span>
+                                    <span class="text-[11px] text-gray-500 ml-auto shrink-0">約25分・¥150</span>
+                                </div>
+                                <ol class="text-xs text-gray-600 leading-relaxed space-y-1 list-decimal list-inside mb-2">
+                                    <li><b>トロッコ亀岡駅 → 馬堀駅（JR）</b>：步行約10分（約500m，往西北方向）</li>
+                                    <li><b>馬堀駅 → 亀岡駅</b>：JR山陰本線，1站約3分，¥150</li>
+                                    <li><b>亀岡駅 → 保津川乘船場</b>：步行約10分（往南方向）</li>
+                                </ol>
+                                <a href="https://www.google.com/maps/dir/?api=1&origin=トロッコ亀岡駅,亀岡市,京都府&destination=保津川下り乗船場,亀岡市,京都府&travelmode=transit" target="_blank" class="bg-[#4A6E8C] text-white px-2.5 py-1 rounded-full text-[10px] font-medium inline-flex items-center gap-1 active:scale-95 transition-transform">
+                                    <i class="fa-solid fa-diamond-turn-right text-[9px]"></i> 完整路線導航
+                                </a>
+                            </div>
+
+                            <div class="rounded-lg border border-green-200 bg-green-50 p-3">
+                                <div class="flex items-center gap-2 mb-1.5">
+                                    <span class="bg-green-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0">③</span>
+                                    <span class="font-bold text-gray-800 text-sm">京阪京都交通巴士 39系統</span>
+                                    <span class="text-[11px] text-gray-500 ml-auto shrink-0">約16分・¥350</span>
+                                </div>
+                                <p class="text-xs text-gray-600 leading-relaxed mb-2">從「トロッコ亀岡駅」巴士站搭乘直行39系統，終點「保津川下り乗船場前」下車，班次配合トロッコ列車時刻運行，是最輕鬆快速的選擇。</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <a href="https://www.keihankyotokotsu.jp/single/detail.php?id=271" target="_blank" class="bg-green-600 text-white px-2.5 py-1 rounded-full text-[10px] font-medium flex items-center gap-1 active:scale-95 transition-transform">
+                                        <i class="fa-solid fa-bus text-[9px]"></i> 巴士路線資訊
+                                    </a>
+                                    <a href="https://www.keihankyotokotsu.jp/bustimetable/timetable.php?stop_cd=2050&no=1" target="_blank" class="bg-white text-gray-600 border border-gray-200 px-2.5 py-1 rounded-full text-[10px] font-medium flex items-center gap-1 active:scale-95 transition-transform">
+                                        <i class="fa-solid fa-clock text-[9px]"></i> 時刻表
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    `
+                },
+                hint: "出發前務必確認當日保津川是否正常運航（天候或水位異常時會停駛），行前請點下方連結查看即時狀況。",
+                buttons: [
+                    { text: "確認保津川當日運航狀況", link: "https://www.hozugawakudari.jp/operation_info" }
+                ]
+            },
+            {
                 type: "attraction", title: "景點導覽", icon: "fa-camera",
                 cards: [
                     {
