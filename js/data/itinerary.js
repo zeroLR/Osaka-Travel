@@ -639,8 +639,8 @@ const itineraryData = [
                     { time: "07:30", route: "大阪梅田 → 淀屋橋", cost: "-", note: "地下鐵御堂筋線，約10分" },
                     { time: "07:45", route: "淀屋橋 → 丹波橋（プレミアムカー）", cost: "乗車券¥400＋指定席¥500", note: "京阪特急 プレミアムカー，約25分" },
                     { time: "~08:10", route: "丹波橋 → 伏見稻荷", cost: "（含於乗車券）", note: "京阪普通，約5分" },
-                    { time: "11:00", route: "伏見稻荷 → 中書島", cost: "約¥200", note: "京阪本線，約10分" },
-                    { time: "11:15", route: "中書島 → 宇治", cost: "約¥200", note: "京阪宇治線，約20分" },
+                    { time: "09:20", route: "伏見稻荷 → 中書島", cost: "約¥200", note: "京阪本線普通，約12分" },
+                    { time: "09:35", route: "中書島 → 宇治", cost: "約¥200", note: "京阪宇治線，約16分（終點站）" },
                     { time: "下午", route: "宇治 → 大阪梅田", cost: "約¥500", note: "京阪宇治線→京阪本線→地下鐵" }
                 ],
                 collapsible: {
@@ -668,10 +668,10 @@ const itineraryData = [
                             至 <b>丹波橋駅</b> 下車，轉乘普通車（同月台）2 站到 <b>伏見稲荷駅</b>，出站步行 3 分鐘到大社入口。<br>
                             <span class="text-gray-400">※ 乘車券刷 ICOCA，另購プレミアムカー券 ¥500。</span>
                         </p>
-                        <h4 class="font-bold text-[#4A6E8C] mb-1">2️⃣ 伏見稻荷 → 宇治 (換車，約30分)</h4>
+                        <h4 class="font-bold text-[#4A6E8C] mb-1">2️⃣ 伏見稻荷 → 宇治 (約30分，09:20 出發)</h4>
                         <p class="mb-3 text-xs leading-relaxed text-gray-600">
-                            搭京阪本線至 <b>中書島駅</b> 下車，換乘 <b>京阪宇治線</b>（月台同層，步行2分），
-                            終點站即 <b>宇治駅</b>，步行 10 分鐘到平等院。
+                            千本鳥居快速拍照後，<b>09:20</b> 離開！搭京阪本線普通至 <b>中書島駅</b>（約12分），同月台換乘 <b>京阪宇治線</b>（步行2分），
+                            終點站 <b>宇治駅</b> 下車，步行 3 分鐘即達 <b>中村藤吉本店</b>，剛好抓到 <b>10:00 開門</b>！
                         </p>
                         <h4 class="font-bold text-[#4A6E8C] mb-1">3️⃣ 宇治 → 回大阪梅田 (約50分)</h4>
                         <p class="mb-3 text-xs leading-relaxed text-gray-600">
@@ -684,7 +684,7 @@ const itineraryData = [
                         </div>
                     `
                 },
-                hint: "今日最早出發（07:30），建議前晚準備好 ICOCA 餘額、預先在官網訂好 プレミアムカー（¥500）。伏見稻荷人潮很多，08:30 前抵達才能拍到空鳥居。",
+                hint: "今日最早出發（07:30）！伏見稻荷只快速拍千本鳥居，09:20 離開趕赴宇治中村藤吉 10:00 開門。建議前晚準備好 ICOCA 餘額、預先訂好 プレミアムカー（¥500）。",
                 buttons: [
                     { text: "プレミアムカー 購票・預約", link: "https://www.keihan.co.jp/traffic/premiumcar/ticket/" },
                     { text: "大阪 → 伏見稻荷導航", link: "https://www.google.com/maps/dir/?api=1&origin=大阪駅&destination=伏見稲荷大社&travelmode=transit" },
@@ -696,13 +696,18 @@ const itineraryData = [
                 type: "attraction", title: "景點", icon: "fa-camera",
                 list: [
                     {
-                        name: "伏見稻荷大社",
-                        desc: "早起避開人潮，拍攝千本鳥居空景。",
+                        name: "伏見稻荷大社（快速拍千本鳥居）",
+                        desc: "08:10 抵達，專攻千本鳥居！拍完後 09:20 離開趕宇治。不登頂、不繞遠路，控制在 1 小時內。免費參觀。",
                         link: "https://www.google.com/maps/search/?api=1&query=伏見稲荷大社+京都"
                     },
                     {
+                        name: "🍵 中村藤吉本店（宇治）— 10:00 開門衝第一",
+                        desc: "1854年創業百年抹茶老舖，10:00 準點開門入座可省去排隊。必點：竹筒まるとパフェ（抹茶）、生茶ゼリイ，為宇治本店限定品項。",
+                        link: "https://maps.app.goo.gl/9GvuCqshZhP9wNhy9"
+                    },
+                    {
                         name: "平等院",
-                        desc: "宇治經典景點，10圓硬幣上的圖案。",
+                        desc: "宇治經典景點，10圓硬幣上的圖案。入場 ¥700。",
                         link: "https://www.google.com/maps/search/?api=1&query=平等院鳳凰堂+宇治"
                     }
                 ]
@@ -711,8 +716,8 @@ const itineraryData = [
                 type: "attraction", title: "📸 打卡推薦", icon: "fa-camera-retro",
                 list: [
                     {
-                        name: "【熱門】千本鳥居 晨間空景",
-                        desc: "08:30 前抵達，陽光從鳥居縫隙斜射成光束感。拍攝技巧：蹲低並廣角向前構圖到消失點，人像放中心讓鳥居形成隧道前景。",
+                        name: "【首要】千本鳥居 晨間空景（08:10–09:15）",
+                        desc: "今日只快速拍鳥居！08:10 抵達人潮最少，陽光從鳥居縫隙斜射成光束感。拍攝技巧：蹲低並廣角構圖到消失點，人像放中心讓鳥居形成隧道前景。09:20 準時離開趕宇治！",
                         link: "https://www.google.com/maps/search/?api=1&query=伏見稲荷大社+千本鳥居"
                     },
                     {
@@ -741,9 +746,9 @@ const itineraryData = [
                         link: "https://www.google.com/maps/search/?api=1&query=伏見稲荷大社+周辺+カフェ"
                     },
                     {
-                        name: "【午餐/下午茶】中村藤吉本店（宇治）",
-                        desc: "宇治最知名的百年抹茶老舖，生茶果凍（生茶ゼリイ）與抹茶膳套餐必點。建議 11:30 前抵達排隊，假日人潮多。",
-                        link: "https://www.google.com/maps/search/?api=1&query=中村藤吉本店+宇治"
+                        name: "【抹茶】中村藤吉本店（宇治）— 10:00 開門",
+                        desc: "1854年創業百年老舖，10:00 準點衝第一批入座！必點：竹筒まるとパフェ（抹茶，¥1,650）、生茶ゼリイ（¥880）均為宇治本店限定。4/01（水）無需預約，但下午常排 1-2 小時，10:00 到最穩！",
+                        link: "https://maps.app.goo.gl/9GvuCqshZhP9wNhy9"
                     },
                     {
                         name: "【抹茶甜點備案】伊藤久右衛門（宇治）",
@@ -756,7 +761,7 @@ const itineraryData = [
                         link: "https://www.google.com/maps/search/?api=1&query=一蘭+梅田+大阪"
                     }
                 ],
-                hint: "今日行程早出（07:30），記得前晚睡好！伏見稻荷建議 08:30 前抵達避人潮，拍到空鳥居的成就感超強。"
+                hint: "今日行程早出（07:30）！伏見稻荷快速拍完，09:20 準時出發趕中村藤吉 10:00 開門。下午再悠閒逛平等院。"
             }
         ]
     },
