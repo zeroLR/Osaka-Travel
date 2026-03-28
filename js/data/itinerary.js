@@ -773,9 +773,11 @@ const itineraryData = [
                 table: [
                     { time: "08:30", route: "大阪梅田 → 京都駅", cost: "約¥570", note: "JR新快速，約30分" },
                     { time: "09:00", route: "京都駅 → 五条坂", cost: "約¥230", note: "市バス100號 或 206號（D1月台），約15分" },
-                    { time: "~17:00", route: "五条坂 → 京都駅 → 大阪梅田", cost: "約¥800", note: "市バス → JR新快速返回" }
+                    { time: "10:00", route: "MOCOMOCO → 花見小路", cost: "-", note: "著裝後步行北上約15分，景點路線起點" },
+                    { time: "~16:00", route: "八坂神社 → MOCOMOCO 歸還和服", cost: "-", note: "步行約15分南下回五条坂，17:00前返還" },
+                    { time: "~17:00", route: "祇園四条 → 京都駅 → 大阪梅田", cost: "約¥800", note: "市バス → JR新快速返回" }
                 ],
-                hint: "今日重點東山區悠閒散步，08:30 出發可在 09:00 前抵達 MOCOMOCO 著裝。下午 16:30 前從五条坂搭バス回京都駅，趕上 17:00 前返還和服。",
+                hint: "MOCOMOCO 著裝完（10:00）後步行北上 15 分到花見小路開始 7 景路線。下午 16:00 從八坂神社步行 15 分回 MOCOMOCO 還衣，再搭車回梅田。",
                 buttons: [
                     { text: "大阪 → 清水寺導航", link: "https://www.google.com/maps/dir/?api=1&origin=大阪駅&destination=清水寺+京都&travelmode=transit" }
                 ]
@@ -812,40 +814,60 @@ const itineraryData = [
                 ]
             },
             {
-                type: "attraction", title: "🍃 清水寺 × 東山散策（穿和服打卡）", icon: "fa-torii-gate",
+                type: "attraction", title: "🗺️ 東山 7 景散步路線（穿和服）", icon: "fa-torii-gate",
                 list: [
                     {
-                        name: "清水寺（清水舞台）",
-                        desc: "10:00 前抵達趁遊客較少。入場 ¥400。清水舞台懸空視野絕佳，穿和服背對京都市景拍攝效果絕美！",
+                        name: "①景 花見小路（祇園）",
+                        desc: "MOCOMOCO 著裝後步行北上 15 分的起點。石板路兩側茶屋林立，穿和服在此漫步最有感，運氣好遇到舞妓進出。",
+                        link: "https://www.google.com/maps/search/?api=1&query=花見小路+祇園+京都"
+                    },
+                    {
+                        name: "②景 安井金比羅宮",
+                        desc: "京都知名「縁切り縁結び」神社！穿過中央石碑的洞口可斬斷惡緣、結下良緣。¥100 繪馬貼滿碑身超壯觀，和服穿碑洞是 IG 熱門打卡。免費參觀。",
+                        link: "https://www.google.com/maps/search/?api=1&query=安井金比羅宮+京都"
+                    },
+                    {
+                        name: "③景 法観寺（八坂の塔）＋ 八坂庚申堂",
+                        desc: "從安井走上坡即達五重塔。附近的八坂庚申堂滿牆彩色くくり猿布球，和服＋彩色背景是 IG 爆款組合！兩處步行不到 5 分。",
+                        link: "https://www.google.com/maps/search/?api=1&query=法観寺+八坂の塔+京都"
+                    },
+                    {
+                        name: "④景 三年坂（産寧坂）",
+                        desc: "石板坡道購伴手禮（茶之菓、抹茶零食）。穿草履走三年坂要小心，傳說跌倒三年不吉！",
+                        link: "https://www.google.com/maps/search/?api=1&query=産寧坂+三年坂+京都"
+                    },
+                    {
+                        name: "⑤景 清水寺",
+                        desc: "入場 ¥400。清水舞台懸空視野絕佳，穿和服背對京都市景拍攝效果絕美！音羽の滝三道流水各有祈願（學業・戀愛・長壽）。",
                         link: "https://www.google.com/maps/search/?api=1&query=清水寺+京都"
                     },
                     {
-                        name: "清水坂 / 二年坂 / 三年坂",
-                        desc: "穿和服逛石板小路最搭！可買伴手禮（茶之菓、京都限定零食）。穿草履走三年坂要小心，傳說跌倒不吉。",
-                        link: "https://www.google.com/maps/search/?api=1&query=二年坂+産寧坂+京都"
+                        name: "⑥景 二年坂（二寧坂）＋ 午餐",
+                        desc: "比三年坂更幽靜的石板路，阿古屋茶屋就在沿途（お茶漬けバイキング ¥1,800，無限暢吃20種漬物）。",
+                        link: "https://www.google.com/maps/search/?api=1&query=二寧坂+二年坂+京都"
                     },
                     {
-                        name: "八坂庚申堂（カラフルくくり猿）",
-                        desc: "滿牆彩色布球の可愛小廟，和服＋くくり猿是 IG 爆款組合！從三年坂步行約 5 分，免費參觀。",
-                        link: "https://www.google.com/maps/search/?api=1&query=八坂庚申堂+京都"
-                    },
-                    {
-                        name: "石塀小路 → 八坂神社 → 花見小路",
-                        desc: "石板小徑超出片 → 八坂神社朱紅大鳥居免費 → 花見小路感受祇園古都氛圍，運氣好遇到舞妓。",
-                        link: "https://www.google.com/maps/search/?api=1&query=石塀小路+京都"
+                        name: "⑦景 八坂神社 → 圓山公園",
+                        desc: "朱紅大鳥居免費參觀，往東走入圓山公園賞百年枝垂れ桜（4月初滿開）。16:00 從此步行 15 分南下回 MOCOMOCO 還衣。",
+                        link: "https://www.google.com/maps/search/?api=1&query=八坂神社+京都"
                     }
                 ],
                 buttons: [
-                    { text: "清水寺", link: "https://www.google.com/maps/search/?api=1&query=清水寺+京都" },
-                    { text: "東山散步全程路線", link: "https://www.google.com/maps/dir/?api=1&origin=清水寺+京都&destination=八坂神社+京都&waypoints=八坂庚申堂+京都|石塀小路+京都|花見小路+祇園&travelmode=walking" }
+                    { text: "清水寺 地圖", link: "https://www.google.com/maps/search/?api=1&query=清水寺+京都" },
+                    { text: "7景 完整步行路線", link: "https://www.google.com/maps/dir/?api=1&origin=花見小路+祇園+京都&destination=八坂神社+京都&waypoints=安井金比羅宮+京都|八坂の塔+法観寺+京都|産寧坂+京都|清水寺+京都|二寧坂+京都&travelmode=walking" }
                 ]
             },
             {
                 type: "attraction", title: "📸 和服打卡拍攝攻略", icon: "fa-camera-retro",
                 list: [
                     {
+                        name: "【特色】安井金比羅宮 縁切り碑洞",
+                        desc: "穿和服鑽過石碑洞口的構圖極為特別！正面蹲入碑洞、鏡頭從外往內拍，前景是碑上貼滿的繪馬，超有層次感。",
+                        link: "https://www.google.com/maps/search/?api=1&query=安井金比羅宮+京都"
+                    },
+                    {
                         name: "【首選】八坂の塔 × 二年坂交叉口",
-                        desc: "京都最經典構圖：石板路前景＋五重塔後景。和服站路中央側拍最美，10:00–11:00 光線佳且遊客相對少。",
+                        desc: "京都最經典構圖：石板路前景＋五重塔後景。和服站路中央側拍最美，上午 10:00–11:00 光線佳且遊客相對少。",
                         link: "https://www.google.com/maps/search/?api=1&query=八坂の塔+法観寺+京都"
                     },
                     {
@@ -854,13 +876,13 @@ const itineraryData = [
                         link: "https://www.google.com/maps/search/?api=1&query=八坂庚申堂+京都"
                     },
                     {
-                        name: "【氣氛】石塀小路 石板燈籠小徑",
-                        desc: "200 公尺石板路，石牆＋暖色燈籠，回頭往遠端拍消失點最美。下午光線從縫隙射入，紗布感超強。",
-                        link: "https://www.google.com/maps/search/?api=1&query=石塀小路+京都"
+                        name: "【熱門】清水舞台 懸空視角",
+                        desc: "清水寺舞台往外俯瞰京都市景，和服背對鏡頭、遠景入畫。上午光線由東照射，色調最暖。",
+                        link: "https://www.google.com/maps/search/?api=1&query=清水寺+京都"
                     },
                     {
                         name: "【小眾】圓山公園 枝垂れ桜",
-                        desc: "4 月初滿開的百年垂枝桜，免費入園。正午光線充足，和服＋桜花絕美，人潮比清水坂少許多！",
+                        desc: "4 月初滿開的百年垂枝桜，免費入園。下午 14:00–16:00 光線充足，和服＋桜花組合絕美，人潮比清水坂少很多！",
                         link: "https://www.google.com/maps/search/?api=1&query=円山公園+枝垂れ桜+京都"
                     }
                 ]
@@ -898,7 +920,7 @@ const itineraryData = [
                     { name: "帶護照備用退稅（清水坂周邊有免稅店）" },
                     { name: "確認行李重量，避免明日超重（ANA/MM 行李限制請對照訂票資訊）" }
                 ],
-                hint: "和服返還 17:00 前，建議 16:00 前離開祇園方向，預留時間走回 MOCOMOCO。晚餐訂 19:00 左右，梅田 18:30 可到。"
+                hint: "16:00 前從八坂神社 / 圓山公園出發，步行 15 分鐘南下回 MOCOMOCO 五条坂（17:00 前還衣）。晚餐訂 19:00，梅田 18:30 可到。"
             }
         ]
     },
