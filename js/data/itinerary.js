@@ -761,122 +761,102 @@ const itineraryData = [
         ]
     },
     {
-        day: 6, date: "04/02", weekday: "四", title: "清水寺 × 金閣寺", tags: ["京都", "東山區", "大阪"],
+        day: 6, date: "04/02", weekday: "四", title: "和服體驗 × 清水寺東山散策", tags: ["京都", "東山區", "和服體驗"],
         sections: [
             {
-                type: "transport", title: "交通", icon: "fa-train-tram",
+                type: "transport", title: "交通（梅田 → 清水寺）", icon: "fa-train-tram",
                 table: [
                     { time: "08:30", route: "大阪梅田 → 京都駅", cost: "約¥570", note: "JR新快速，約30分" },
-                    { time: "09:10", route: "京都駅 → 清水道", cost: "約¥230", note: "市バス206號 或 100號，約15分" },
-                    { time: "12:30", route: "祇園四条 → 烏丸御池", cost: "約¥220", note: "地下鐵東西線，約3分" },
-                    { time: "12:40", route: "烏丸御池 → 今出川", cost: "約¥220", note: "地下鐵烏丸線，約8分（轉乘）" },
-                    { time: "13:10", route: "今出川 → 金閣寺道", cost: "約¥230", note: "市バス102號，約20分" },
-                    { time: "~15:30", route: "北野白梅町 → 京都駅 → 大阪梅田", cost: "約¥800", note: "市バス50號→JR新快速" }
+                    { time: "09:00", route: "京都駅 → 五条坂", cost: "約¥230", note: "市バス100號 或 206號（D1月台），約15分" },
+                    { time: "~17:00", route: "五条坂 → 京都駅 → 大阪梅田", cost: "約¥800", note: "市バス → JR新快速返回" }
                 ],
-                collapsible: {
-                    title: "🗺️ 清水寺（朝）→ 金閣寺（午後）完整路線",
-                    content: `
-                        <h4 class="font-bold text-[#4A6E8C] mt-2 mb-1">1️⃣ 梅田 → 清水寺（約40分）</h4>
-                        <p class="mb-3 text-xs leading-relaxed text-gray-600">大阪駅搭 <b>JR新快速</b> 約 28 分到京都駅，再於 <b>D1 月台</b>搭 <b>市バス 206號</b>（東山廻り）或 <b>100號</b>，約 15 分在「<b>清水道</b>」下車，步行 10 分鐘上坡即達清水寺。</p>
-                        <h4 class="font-bold text-[#4A6E8C] mb-1">2️⃣ 清水寺 → 祇園 → 金閣寺（約40分）</h4>
-                        <p class="mb-3 text-xs leading-relaxed text-gray-600">清水坂往北步行 → 八坂神社 → 四条通 → 步行至「<b>祇園四条駅</b>」搭地下鐵東西線到「<b>烏丸御池</b>」，換乘烏丸線至「<b>今出川駅</b>」，再搭市バス <b>102號</b> 約 20 分到「<b>金閣寺道</b>」。</p>
-                        <h4 class="font-bold text-[#4A6E8C] mb-1">3️⃣ 金閣寺 → 北野天滿宮 → 回大阪</h4>
-                        <p class="mb-3 text-xs leading-relaxed text-gray-600">金閣寺步行 20 分（或搭2站市バス）到北野天滿宮，再步行 7 分到「<b>北野白梅町駅</b>」搭市バス 50號回京都駅，JR新快速返大阪梅田。</p>
-                        <div class="bg-green-50 border border-green-100 rounded-lg p-2.5 text-xs text-gray-700">
-                            <strong class="text-green-700">💡 建議：</strong>15:30 前離開京都，回大阪還有 2 小時可退稅購物。
-                        </div>
-                    `
-                },
-                hint: "今日是京都最後一天，上午清水寺、下午金閣寺！早出發（08:30）才能趕完兩個景點。步行量大（約 15,000 步），請穿好走的鞋。",
+                hint: "今日重點東山區悠閒散步，08:30 出發可在 09:00 前抵達 MOCOMOCO 著裝。下午 16:30 前從五条坂搭バス回京都駅，趕上 17:00 前返還和服。",
                 buttons: [
-                    { text: "大阪 → 清水寺導航", link: "https://www.google.com/maps/dir/?api=1&origin=大阪駅&destination=清水寺+京都&travelmode=transit" },
-                    { text: "清水寺 → 金閣寺導航", link: "https://www.google.com/maps/dir/?api=1&origin=清水寺+京都&destination=金閣寺+鹿苑寺+京都&travelmode=transit" }
+                    { text: "大阪 → 清水寺導航", link: "https://www.google.com/maps/dir/?api=1&origin=大阪駅&destination=清水寺+京都&travelmode=transit" }
                 ]
             },
             {
-                type: "attraction", title: "🍃 清水寺 × 東山（上午）", icon: "fa-torii-gate",
+                type: "attraction", title: "👘 和服租借 — MOCOMOCO 清水寺店", icon: "fa-shirt",
+                table: [
+                    { time: "09:00", route: "抵達 MOCOMOCO 清水寺店", cost: "-", note: "市バス「五条坂」下車步行1分，建議事先預約" },
+                    { time: "09:00-10:00", route: "選衣 → 着付け → 髮型設定", cost: "¥5,500/人", note: "カップルプラン ¥9,900/2名（2人同行更划算）" },
+                    { time: "17:00前", route: "歸還和服（含荷物預かり）", cost: "-", note: "翌日返却・京都市内ホテル返却也可（另計費）" }
+                ],
+                collapsible: {
+                    title: "👘 MOCOMOCO 和服租借詳細資訊",
+                    content: `
+                        <div class="space-y-2.5 text-xs text-gray-700">
+                            <div class="flex gap-2"><span class="text-base">📍</span><div><b>地址：</b>京都市東山区遊行前町583-4<br><span class="text-gray-400">市バス「五条坂」下車、徒歩1分</span></div></div>
+                            <div class="flex gap-2"><span class="text-base">🕐</span><div><b>營業：</b>09:00–18:00（全年無休）／和服返還 <b>17:00 前</b></div></div>
+                            <div class="flex gap-2"><span class="text-base">💴</span><div>
+                                <b>料金プラン：</b><br>
+                                ・MOCOMOCOプラン（1日）：<b>¥5,500/人</b><br>
+                                ・カップルプラン（2名セット）：<b>¥9,900</b>
+                            </div></div>
+                            <div class="bg-[#EAF2F8] border border-[#BCE0FD] rounded-lg p-2.5">
+                                <b class="text-[#4A6E8C]">プランに含まれるもの（すべて無料）</b><br>
+                                <span class="text-gray-600">着付け、ヘアセット、髪飾り付け放題、荷物預かり、着物保険込み、キャンセル料無料</span>
+                            </div>
+                            <div class="flex gap-2"><span class="text-base">📅</span><div><b>予約：</b>オンライン 24 小時受付，当日予約 OK（事先預約強烈推薦）</div></div>
+                        </div>
+                    `
+                },
+                buttons: [
+                    { text: "MOCOMOCO 清水寺店 預約", link: "https://mocomoco-kimono.com/kiyomizudera_booking/" },
+                    { text: "MOCOMOCO 店舗・プラン詳細", link: "https://mocomoco-kimono.com/kiyomizu/" }
+                ]
+            },
+            {
+                type: "attraction", title: "🍃 清水寺 × 東山散策（穿和服打卡）", icon: "fa-torii-gate",
                 list: [
                     {
-                        name: "清水寺",
-                        desc: "早上先走經典清水舞台，趁遊客較少時拍空景。建議 09:30 前到達。入場 ¥400。",
+                        name: "清水寺（清水舞台）",
+                        desc: "10:00 前抵達趁遊客較少。入場 ¥400。清水舞台懸空視野絕佳，穿和服背對京都市景拍攝效果絕美！",
                         link: "https://www.google.com/maps/search/?api=1&query=清水寺+京都"
                     },
                     {
                         name: "清水坂 / 二年坂 / 三年坂",
-                        desc: "逛街、拍照，買伴手禮（茶之菓、京都限定零食）。三年坂傳說跌倒不吉，小心石板路。",
+                        desc: "穿和服逛石板小路最搭！可買伴手禮（茶之菓、京都限定零食）。穿草履走三年坂要小心，傳說跌倒不吉。",
                         link: "https://www.google.com/maps/search/?api=1&query=二年坂+産寧坂+京都"
                     },
                     {
-                        name: "八坂神社 → 祇園四条",
-                        desc: "朱紅神社免費參觀，走花見小路感受古都風情後步行至祇園四条駅搭車前往金閣寺。",
-                        link: "https://www.google.com/maps/search/?api=1&query=八坂神社+京都"
+                        name: "八坂庚申堂（カラフルくくり猿）",
+                        desc: "滿牆彩色布球の可愛小廟，和服＋くくり猿是 IG 爆款組合！從三年坂步行約 5 分，免費參觀。",
+                        link: "https://www.google.com/maps/search/?api=1&query=八坂庚申堂+京都"
+                    },
+                    {
+                        name: "石塀小路 → 八坂神社 → 花見小路",
+                        desc: "石板小徑超出片 → 八坂神社朱紅大鳥居免費 → 花見小路感受祇園古都氛圍，運氣好遇到舞妓。",
+                        link: "https://www.google.com/maps/search/?api=1&query=石塀小路+京都"
                     }
                 ],
                 buttons: [
                     { text: "清水寺", link: "https://www.google.com/maps/search/?api=1&query=清水寺+京都" },
-                    { text: "東山散步路線", link: "https://www.google.com/maps/dir/?api=1&origin=清水寺+京都&destination=八坂神社+京都&waypoints=二年坂+京都|花見小路+祇園&travelmode=walking" }
+                    { text: "東山散步全程路線", link: "https://www.google.com/maps/dir/?api=1&origin=清水寺+京都&destination=八坂神社+京都&waypoints=八坂庚申堂+京都|石塀小路+京都|花見小路+祇園&travelmode=walking" }
                 ]
             },
             {
-                type: "attraction", title: "📸 東山打卡推薦", icon: "fa-camera-retro",
+                type: "attraction", title: "📸 和服打卡拍攝攻略", icon: "fa-camera-retro",
                 list: [
                     {
-                        name: "【熱門】八坂の塔 × 二年坂交叉口",
-                        desc: "京都最經典構圖：石板路前景＋五重塔後景。站在二年坂往北拍，黃昏光線最暖，但今天上午也很美。",
+                        name: "【首選】八坂の塔 × 二年坂交叉口",
+                        desc: "京都最經典構圖：石板路前景＋五重塔後景。和服站路中央側拍最美，10:00–11:00 光線佳且遊客相對少。",
                         link: "https://www.google.com/maps/search/?api=1&query=八坂の塔+法観寺+京都"
                     },
                     {
-                        name: "【熱門】石塀小路（Ishibei-koji）",
-                        desc: "狹窄石板小徑＋暖色燈籠，位於高台寺旁，全程約 200 公尺，是全京都最有氛圍的巷子。",
+                        name: "【必拍】八坂庚申堂 くくり猿",
+                        desc: "彩色布球滿牆，和服正面站或半蹲，背景顏色炸裂。幾乎每個角度都好拍，是京都和服照最強場景之一！",
+                        link: "https://www.google.com/maps/search/?api=1&query=八坂庚申堂+京都"
+                    },
+                    {
+                        name: "【氣氛】石塀小路 石板燈籠小徑",
+                        desc: "200 公尺石板路，石牆＋暖色燈籠，回頭往遠端拍消失點最美。下午光線從縫隙射入，紗布感超強。",
                         link: "https://www.google.com/maps/search/?api=1&query=石塀小路+京都"
                     },
                     {
                         name: "【小眾】圓山公園 枝垂れ桜",
-                        desc: "京都最大垂枝桜，4 月初滿開，免費入園。上午光線充足，是拍桜的黃金時段。",
+                        desc: "4 月初滿開的百年垂枝桜，免費入園。正午光線充足，和服＋桜花絕美，人潮比清水坂少許多！",
                         link: "https://www.google.com/maps/search/?api=1&query=円山公園+枝垂れ桜+京都"
-                    }
-                ]
-            },
-            {
-                type: "attraction", title: "景點（下午）", icon: "fa-camera",
-                list: [
-                    {
-                        name: "金閣寺 (鹿苑寺)",
-                        desc: "欣賞閃耀的金箔建築與倒影。早上光線充足，倒影最美。入場 ¥500。",
-                        link: "https://www.google.com/maps/search/?api=1&query=金閣寺+鹿苑寺+京都"
-                    },
-                    {
-                        name: "北野天滿宮",
-                        desc: "學問之神，周邊有梅苑（4月已結束）與可愛的牛牛雕像可拍照，免費參觀。",
-                        link: "https://www.google.com/maps/search/?api=1&query=北野天満宮+京都"
-                    }
-                ],
-                buttons: [
-                    { text: "金閣寺 → 北野天滿宮", link: "https://www.google.com/maps/dir/?api=1&origin=金閣寺+京都&destination=北野天満宮+京都&travelmode=walking" }
-                ]
-            },
-            {
-                type: "attraction", title: "📸 打卡推薦", icon: "fa-camera-retro",
-                list: [
-                    {
-                        name: "【熱門】龍安寺 石庭（Ryoanji）",
-                        desc: "15 顆石、白砂枯山水，極簡美學，構圖只需讓砂紋延伸到畫面邊緣即可。入場 ¥600。從金閣寺搭市バス 59 號，一站即達。",
-                        link: "https://www.google.com/maps/search/?api=1&query=龍安寺+石庭+京都"
-                    },
-                    {
-                        name: "【熱門】仁和寺 五重塔（Ninnaji）",
-                        desc: "皇室御用寺廟，御室桜（矮桜）4 月初盛開，五重塔＋桜花前景是絕佳構圖。入場 ¥500。從龍安寺步行約 15 分鐘。",
-                        link: "https://www.google.com/maps/search/?api=1&query=仁和寺+五重塔+京都"
-                    },
-                    {
-                        name: "【小眾】さらさ西陣（Sarasa Nishijin Cafe）",
-                        desc: "舊公共澡堂改建的咖啡廳，內部磁磚裝飾牆極具特色，無最低消費，是京都 IG 密度最高的隱藏咖啡廳之一。從北野天滿宮步行約 12 分鐘。",
-                        link: "https://www.google.com/maps/search/?api=1&query=さらさ西陣+カフェ+京都"
-                    },
-                    {
-                        name: "【小眾】上七軒（Kamishichiken）",
-                        desc: "京都最古老的花街，比祇園少 90% 觀光客，傳統格子町家＋石板路，傍晚偶可遇到舞妓出勤，可自由拍攝建築。從北野天滿宮步行 5 分鐘。",
-                        link: "https://www.google.com/maps/search/?api=1&query=上七軒+京都"
                     }
                 ]
             },
@@ -884,34 +864,36 @@ const itineraryData = [
                 type: "dining", title: "餐廳推薦", icon: "fa-utensils",
                 list: [
                     {
-                        name: "【午餐】錦市場 — 京の台所",
-                        desc: "清水坂往北步行約 15 分鐘。400 年歷史的室内市場小巷，串燒、玉子燒、京都豆腐小吃，邊走邊吃解決午餐，吃完搭地下鐵前往金閣寺。",
-                        link: "https://www.google.com/maps/search/?api=1&query=錦市場+京都"
+                        name: "【午餐・CP爆表】阿古屋茶屋 — お茶漬けバイキング",
+                        desc: "¥1,800 無限暢吃 20 種京都漬物＋お茶漬け，時間無制限全品自由加點！穿和服坐下來慢慢吃最合適。位於二寧坂沿い，步行即達。",
+                        link: "https://www.google.com/maps/search/?api=1&query=阿古屋茶屋+二寧坂+京都"
                     },
                     {
-                        name: "【午後茶】金閣寺周邊 茶屋",
-                        desc: "金閣寺參觀完後，附近有傳統茶屋提供抹茶甜點組合，適合逛完坐下來歇腿。",
-                        link: "https://www.google.com/maps/search/?api=1&query=金閣寺+周辺+抹茶+茶屋+京都"
+                        name: "【午餐備案】清修庵 清水店 — ミニ丼＋そばセット",
+                        desc: "和食定食 ¥1,000 台，ミニうな丼＋そば、ミニ天丼＋そば等組合，份量剛好。穿和服進出方便，鄰近清水寺。",
+                        link: "https://www.google.com/maps/search/?api=1&query=清修庵+清水+京都"
                     },
                     {
-                        name: "【晚餐】梅田 — 大阪燒最後一戰",
-                        desc: "回大阪後的最後完整晚餐，推薦再吃一次大阪燒（きじ）或章魚燒（道頓堀風格）為這趟旅程畫下句點。",
-                        link: "https://www.google.com/maps/search/?api=1&query=きじ+新梅田食道街+お好み焼き"
+                        name: "【晚餐・壽喜燒】壽喜燒 純 梅田本店",
+                        desc: "JA農會直營黑毛和牛，¥5,400 壽喜燒套餐，先燒後煮雙享受，蛋液裹入霜降油花超滿足。HEP NAVIO 7F，回梅田後直接上樓。建議事先訂位！",
+                        link: "https://www.google.com/maps/search/?api=1&query=すき焼き+純+梅田+HEP+NAVIO"
                     },
                     {
-                        name: "【晚餐備案】梅田 旬彩 角倉",
-                        desc: "精緻的梅田日式料理，適合最後一個完整晚餐正式慶祝，建議提前確認座位。",
-                        link: "https://www.google.com/maps/search/?api=1&query=角倉+梅田+大阪"
+                        name: "【晚餐備案】涮禪 梅田店",
+                        desc: "平價壽喜燒，平均一餐 ¥5,000 以下，也有放題方案。若「純」未能訂位可選這間，同樣在梅田一帶。",
+                        link: "https://www.google.com/maps/search/?api=1&query=涮禅+梅田+すき焼き"
                     }
                 ]
             },
             {
-                type: "todo", title: "待辦", icon: "fa-clipboard-list",
+                type: "todo", title: "事前待辦", icon: "fa-clipboard-list",
                 list: [
-                    { name: "大阪市區最後補買藥妝、伴手禮 (馬力歐泡澡球)。" },
-                    { name: "確認行李重量，避免明日超重（AirAsia 行李限制請對照訂票資訊）。" }
+                    { name: "官網預約 MOCOMOCO 和服（可選款式顏色，推薦提前確認）" },
+                    { name: "預約壽喜燒「純」梅田本店晚餐（HEP NAVIO 7F，熱門需訂位）" },
+                    { name: "帶護照備用退稅（清水坂周邊有免稅店）" },
+                    { name: "確認行李重量，避免明日超重（ANA/MM 行李限制請對照訂票資訊）" }
                 ],
-                hint: "買東西記得帶護照，預留30分鐘排隊退稅。退稅建議在大型百貨（阪急/LUCUA）辦，單店單次消費滿 ¥5,000 即可。"
+                hint: "和服返還 17:00 前，建議 16:00 前離開祇園方向，預留時間走回 MOCOMOCO。晚餐訂 19:00 左右，梅田 18:30 可到。"
             }
         ]
     },
